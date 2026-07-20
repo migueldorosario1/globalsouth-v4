@@ -1,0 +1,164 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+	.filter((post) => !post.data.draft)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Group posts by month
+const postsByMonth = new Map();
+
+posts.forEach(post => {
+	const date = post.data.pubDate;
+	const year = date.getFullYear();
+	const month = date.getMonth() + 1; // 1 to 12
+	const monthKey = `${year}-${month.toString().padStart(2, '0')}`;
+	const monthName = date.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
+	
+	if (!postsByMonth.has(monthKey)) {
+		postsByMonth.set(monthKey, {
+			key: monthKey,
+			name: monthName.charAt(0).toUpperCase() + monthName.slice(1),
+			year: year,
+			month: month.toString().padStart(2, '0'),
+			firstPost: post,
+			count: 1
+		});
+	} else {
+		const entry = postsByMonth.get(monthKey);
+		entry.count++;
+	}
+});
+
+const months = Array.from(postsByMonth.values());
+---
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<BaseHead title={`Archive - ${SITE_TITLE}`} description="Global South News archive" />
+		<style>
+			main {
+				width: 960px;
+				max-width: 100%;
+				margin: 0 auto;
+				padding: 2rem 1rem;
+			}
+			h1 {
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+			.month-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+				gap: 1.5rem;
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+			.month-card {
+				background: #f4f7fb;
+				border-radius: 12px;
+				overflow: hidden;
+				transition: transform 0.2s, box-shadow 0.2s;
+			}
+			.month-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+			}
+			.month-card a {
+				text-decoration: none;
+				color: inherit;
+				display: block;
+			}
+			.thumb-container {
+				width: 100%;
+				height: 140px;
+				background: #ddd;
+				overflow: hidden;
+			}
+			.thumb-container img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.month-info {
+				padding: 1rem;
+				text-align: center;
+			}
+			.month-name {
+				font-weight: bold;
+				margin: 0 0 0.5rem 0;
+				color: #111;
+			}
+			.post-count {
+				font-size: 0.85rem;
+				color: #666;
+				margin: 0;
+			}
+			@media (max-width: 720px) {
+				.month-grid {
+					grid-template-columns: repeat(2, 1fr);
+					gap: 1rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Arquivo Histórico</h1>
+			<ul class="month-grid" id="month-list">
+				{months.map((month, index) => (
+					<li class="month-item" style={index >= 50 ? 'display: none;' : ''}>
+						<a href={`/historico/${month.year}/${month.month}`}>
+							<div class="month-card">
+								<div class="thumb-container">
+									{month.firstPost.data.heroImage ? (
+										<img src={month.firstPost.data.heroImage} alt="" loading="lazy" />
+									) : (
+										<div style="width:100%; height:100%; background:#ccc; display:flex; align-items:center; justify-content:center;">Sem Imagem</div>
+									)}
+								</div>
+								<div class="month-info">
+									<h3 class="month-name">{month.name}</h3>
+									<p class="post-count">{month.count} notícias</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				))}
+			</ul>
+			<div style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
+				<button id="ver-mais-btn" style="padding: 0.8rem 2rem; background: #333; color: white; border: none; cursor: pointer; border-radius: 8px; font-weight: bold; margin-bottom: 1rem; transition: background 0.2s;">Carregar mais meses</button>
+			</div>
+			
+			<script>
+				let currentShown = 50;
+				const items = document.querySelectorAll('.month-item');
+				const btnVerMais = document.getElementById('ver-mais-btn');
+				
+				if (items.length <= 50) {
+					if(btnVerMais) btnVerMais.style.display = 'none';
+				}
+
+				if(btnVerMais) {
+					btnVerMais.addEventListener('click', () => {
+						for (let i = currentShown; i < currentShown + 50 && i < items.length; i++) {
+							items[i].style.display = '';
+						}
+						currentShown += 50;
+						if (currentShown >= items.length) {
+							btnVerMais.style.display = 'none';
+						}
+					});
+				}
+			</script>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "rewrites": [
+    {
+      "source": "/hero/:filename*",
+      "destination": "https://pub-f814950afdbb40b7801fc9ec9dc9e04c.r2.dev/hero/:filename*"
+    },
+    {
+      "source": "/admin",
+      "destination": "http://159.89.237.100:5001/admin"
+    },
+    {
+      "source": "/login",
+      "destination": "http://159.89.237.100:5001/login"
+    },
+    {
+      "source": "/logout",
+      "destination": "http://159.89.237.100:5001/logout"
+    },
+    {
+      "source": "/drafts",
+      "destination": "http://159.89.237.100:5001/drafts"
+    },
+    {
+      "source": "/edit/:slug*",
+      "destination": "http://159.89.237.100:5001/edit/:slug*"
+    },
+    {
+      "source": "/upload_image",
+      "destination": "http://159.89.237.100:5001/upload_image"
+    },
+    {
+      "source": "/posts",
+      "destination": "http://159.89.237.100:5001/posts"
+    },
+    {
+      "source": "/delete/:slug*",
+      "destination": "http://159.89.237.100:5001/delete/:slug*"
+    }
+  ]
+}

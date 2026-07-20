@@ -1,0 +1,44 @@
+---
+const links = [
+	{ href: '/tags/multipolar-world', label: 'Multipolar World' },
+	{ href: '/tags/development', label: 'Development' },
+	{ href: '/tags/trade', label: 'Trade' },
+];
+---
+
+<aside class="interlinks" aria-label="Related sections">
+	<h3>Related sections</h3>
+	<div>
+		{links.map((link) => <a href={link.href}>{link.label}</a>)}
+	</div>
+</aside>
+
+<style>
+	.interlinks {
+		border-top: 1px solid rgba(var(--gray-light), 0.7);
+		padding-top: 1.5rem;
+	}
+
+	.interlinks h3 {
+		margin: 0 0 0.75rem;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgb(var(--gray));
+	}
+
+	.interlinks div {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+	}
+
+	.interlinks a {
+		border: 1px solid rgba(var(--gray-light), 0.9);
+		border-radius: 999px;
+		padding: 0.45rem 0.8rem;
+		text-decoration: none;
+		color: rgb(var(--black));
+		font-weight: 700;
+	}
+</style>

@@ -1,0 +1,138 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE } from '../../consts';
+
+export async function getStaticPaths() {
+	const posts = (await getCollection('blog')).filter((post) => !post.data.draft);
+	const years = [...new Set(posts.map((post) => post.data.pubDate.getFullYear().toString()))];
+
+	return years.map((year) => ({
+		params: { year },
+	}));
+}
+
+const { year } = Astro.params;
+const posts = (await getCollection('blog'))
+	.filter((post) => !post.data.draft)
+	.filter((post) => post.data.pubDate.getFullYear().toString() === year)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const postsByMonth = new Map();
+
+posts.forEach((post) => {
+	const date = post.data.pubDate;
+	const month = (date.getMonth() + 1).toString().padStart(2, '0');
+	const key = `${year}-${month}`;
+	const name = date.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
+
+	if (!postsByMonth.has(key)) {
+		postsByMonth.set(key, {
+			name: name.charAt(0).toUpperCase() + name.slice(1),
+			month,
+			firstPost: post,
+			count: 1,
+		});
+	} else {
+		postsByMonth.get(key).count += 1;
+	}
+});
+
+const months = Array.from(postsByMonth.values());
+---
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<BaseHead title={`Archive ${year} - ${SITE_TITLE}`} description={`Global South News archive for ${year}`} />
+		<style>
+			main {
+				width: 960px;
+				max-width: 100%;
+				margin: 0 auto;
+				padding: 2rem 1rem;
+			}
+			h1 {
+				margin-bottom: 0.5rem;
+				text-align: center;
+			}
+			.archive-intro {
+				text-align: center;
+				color: rgb(var(--gray));
+				margin-bottom: 2rem;
+			}
+			.month-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+				gap: 1.5rem;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.month-card {
+				background: #f4f7fb;
+				border-radius: 14px;
+				overflow: hidden;
+				transition: transform 0.2s, box-shadow 0.2s;
+			}
+			.month-card:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+			}
+			.month-card a {
+				display: block;
+				color: inherit;
+				text-decoration: none;
+			}
+			.thumb-container {
+				height: 145px;
+				background: #ddd;
+				overflow: hidden;
+			}
+			.thumb-container img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.month-info {
+				padding: 1rem;
+				text-align: center;
+			}
+			.month-name {
+				margin: 0 0 0.5rem;
+			}
+			.post-count {
+				margin: 0;
+				color: rgb(var(--gray));
+				font-size: 0.9rem;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Histórico de {year}</h1>
+			<p class="archive-intro">{posts.length} notícias publicadas no ano.</p>
+			<ul class="month-grid">
+				{months.map((month) => (
+					<li class="month-card">
+						<a href={`/historico/${year}/${month.month}`}>
+							<div class="thumb-container">
+								{month.firstPost.data.heroImage ? (
+									<img src={month.firstPost.data.heroImage} alt="" loading="lazy" />
+								) : null}
+							</div>
+							<div class="month-info">
+								<h2 class="month-name">{month.name}</h2>
+								<p class="post-count">{month.count} notícias</p>
+							</div>
+						</a>
+					</li>
+				))}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

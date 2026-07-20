@@ -1,0 +1,136 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE } from '../../consts';
+
+export async function getStaticPaths() {
+	const allPosts = (await getCollection('blog')).filter((post) => !post.data.draft);
+	const fallbackTags = [
+		'multipolar-world',
+		'brics',
+		'development',
+		'trade',
+		'latin-america',
+		'media-map',
+	];
+	const uniqueTags = [...new Set([...allPosts.flatMap((post) => post.data.tags || []), ...fallbackTags])];
+
+	return uniqueTags.map((tag) => ({
+		params: { tag },
+		props: { posts: allPosts.filter((post) => post.data.tags?.includes(tag)) },
+	}));
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const label = (tag || '')
+	.split('-')
+	.filter(Boolean)
+	.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+	.join(' ');
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`${label} - ${SITE_TITLE}`} description={`Global South News coverage on ${label}.`} />
+		<style>
+			main {
+				width: min(960px, calc(100% - 2rem));
+				margin: 0 auto;
+			}
+
+			.tag-hero {
+				padding: 3rem 0 2rem;
+				border-bottom: 1px solid rgba(var(--gray-light), 0.8);
+				margin-bottom: 2rem;
+			}
+
+			.tag-kicker {
+				margin: 0 0 0.5rem;
+				color: rgb(var(--gray));
+				font-size: 0.85rem;
+				font-weight: 800;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+			}
+
+			.tag-title {
+				margin: 0;
+				font-size: clamp(2.2rem, 6vw, 4rem);
+				line-height: 1;
+			}
+
+			.posts {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 2rem;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			.posts a {
+				display: block;
+				text-decoration: none;
+			}
+
+			.posts img {
+				width: 100%;
+				border-radius: 12px;
+				margin-bottom: 0.75rem;
+			}
+
+			.post-title {
+				margin: 0;
+				color: rgb(var(--black));
+				font-size: 1.35rem;
+				line-height: 1.2;
+			}
+
+			.date,
+			.empty {
+				color: rgb(var(--gray));
+			}
+
+			@media (max-width: 720px) {
+				.posts {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="tag-hero">
+				<p class="tag-kicker">Section</p>
+				<h1 class="tag-title">{label}</h1>
+			</section>
+
+			{sortedPosts.length ? (
+				<ul class="posts">
+					{sortedPosts.map((post) => (
+						<li>
+							<a href={`/blog/${post.id}/`}>
+								{post.data.heroImage && (
+									<img width="720" height="360" src={post.data.heroImage} alt="" />
+								)}
+								<h2 class="post-title">{post.data.title}</h2>
+								<p class="date"><FormattedDate date={post.data.pubDate} /></p>
+							</a>
+						</li>
+					))}
+				</ul>
+			) : (
+				<p class="empty">This section is ready. New stories will appear here as the source map grows.</p>
+			)}
+		</main>
+		<Footer />
+	</body>
+</html>

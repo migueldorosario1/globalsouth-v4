@@ -1,0 +1,348 @@
+---
+import { SITE_TITLE } from '../consts';
+import logoImg from '../assets/logo.png';
+
+const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
+const cleanPath = pathname.replace(/^\/|\/$/g, '');
+
+const isAboutActive = cleanPath === 'about';
+const isEditorialActive = cleanPath === 'editorial';
+const isGeonewsActive = cleanPath.startsWith('tags/asia') || 
+                        cleanPath.startsWith('tags/africa') || 
+                        cleanPath.startsWith('tags/latin-america') || 
+                        cleanPath.startsWith('tags/west-asia') || 
+                        cleanPath.startsWith('tags/europe') || 
+                        cleanPath.startsWith('tags/north-america') ||
+                        cleanPath.startsWith('tags/');
+---
+
+<header class="site-header">
+	<nav class="navbar" aria-label="Main navigation">
+		<div class="header-brand-container">
+			<a href="/" class="logo-link" aria-label={SITE_TITLE}>
+				<img src={logoImg.src} alt="" width="40" height="40" class="logo-img" />
+				<div class="logo-text-container">
+					<span class="logo-title">GLOBAL <span class="accent-text">SOUTH</span></span>
+					<span class="logo-subtitle">NEWS</span>
+				</div>
+			</a>
+			<p class="kicker">Development, sovereignty & multipolar politics</p>
+		</div>
+		
+		<div class="nav-container">
+			<ul class="nav-links">
+				<li class="nav-item">
+					<a href="/about" class:list={[{ active: isAboutActive }]}>About Us</a>
+				</li>
+				<li class="nav-item dropdown">
+					<button type="button" class:list={["dropdown-trigger", { active: isEditorialActive }]} aria-haspopup="true" aria-expanded="false">
+						Editorial <span class="chevron">▼</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="/editorial">Columnists</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<button type="button" class:list={["dropdown-trigger", { active: isGeonewsActive }]} aria-haspopup="true" aria-expanded="false">
+						Geonews <span class="chevron">▼</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="/tags/asia">Asia</a></li>
+						<li><a href="/tags/africa">Africa</a></li>
+						<li><a href="/tags/latin-america">Latin America</a></li>
+						<li><a href="/tags/west-asia">West Asia</a></li>
+						<li><a href="/tags/europe">Europe</a></li>
+						<li><a href="/tags/north-america">North America</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<style>
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 1000;
+		background: var(--bg-header);
+		backdrop-filter: blur(16px);
+		-webkit-backdrop-filter: blur(16px);
+		border-bottom: 1px solid var(--border-color);
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+	}
+
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0.75rem 1.5rem;
+		gap: 1.5rem;
+	}
+
+	.header-brand-container {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+		min-width: 0;
+	}
+
+	.logo-link {
+		display: flex;
+		align-items: center;
+		gap: 0.85rem;
+		text-decoration: none;
+		flex-shrink: 0;
+	}
+
+	.logo-img {
+		width: 40px;
+		height: 40px;
+		object-fit: contain;
+		filter: drop-shadow(0 2px 8px rgba(255, 76, 59, 0.15));
+		transition: transform 0.3s ease;
+	}
+	
+	.logo-link:hover .logo-img {
+		transform: rotate(15deg) scale(1.05);
+	}
+
+	.logo-text-container {
+		display: flex;
+		flex-direction: column;
+		line-height: 1.05;
+	}
+
+	.logo-title {
+		font-family: var(--font-headings);
+		font-weight: 800;
+		font-size: 1.15rem;
+		letter-spacing: -0.02em;
+		color: var(--text-title);
+		text-transform: uppercase;
+	}
+
+	.accent-text {
+		color: var(--accent);
+	}
+
+	.logo-subtitle {
+		font-family: var(--font-headings);
+		font-weight: 700;
+		font-size: 0.75rem;
+		letter-spacing: 0.28em;
+		color: var(--text-muted);
+		text-transform: uppercase;
+	}
+
+	.kicker {
+		margin: 0;
+		color: var(--text-muted);
+		font-size: 0.7rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		border-left: 1px solid var(--border-color);
+		padding-left: 1rem;
+		height: 20px;
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+	}
+
+	.nav-container {
+		display: flex;
+		align-items: center;
+		min-width: 0;
+	}
+
+	.nav-links {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-item {
+		position: relative;
+	}
+
+	/* Nav items customization */
+	.nav-links a, .dropdown-trigger {
+		color: var(--text-main) !important;
+		font-family: var(--font-headings);
+		font-weight: 600;
+		font-size: 0.85rem;
+		padding: 0.45rem 0.85rem;
+		border-radius: 6px;
+		transition: all 0.2s ease !important;
+		text-decoration: none !important;
+		border: 1px solid transparent;
+		white-space: nowrap;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		background: transparent;
+		cursor: pointer;
+	}
+
+	.nav-links a:hover, .dropdown-trigger:hover {
+		color: var(--text-title) !important;
+		background: rgba(0, 0, 0, 0.03);
+		border-color: rgba(0, 0, 0, 0.05);
+	}
+
+	.nav-links a.active, .dropdown-trigger.active {
+		color: var(--text-title) !important;
+		background: rgba(158, 47, 80, 0.08);
+		border-color: rgba(158, 47, 80, 0.2);
+		font-weight: 700;
+	}
+
+	/* Dropdown menu container */
+	.dropdown-menu {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%) translateY(10px);
+		background: var(--bg-card);
+		border: 1px solid var(--border-color);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+		border-radius: 8px;
+		list-style: none;
+		margin: 0.5rem 0 0 0;
+		padding: 0.5rem;
+		min-width: 170px;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+		z-index: 1010;
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+	}
+
+	/* Show dropdown on hover (for desktop) */
+	.nav-item.dropdown:hover .dropdown-menu,
+	.nav-item.dropdown:focus-within .dropdown-menu,
+	.nav-item.dropdown.is-open .dropdown-menu {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(-50%) translateY(0);
+	}
+
+	.dropdown-menu li {
+		width: 100%;
+	}
+
+	.dropdown-menu a {
+		color: var(--text-main) !important;
+		font-family: var(--font-headings);
+		font-weight: 500;
+		font-size: 0.8rem;
+		padding: 0.45rem 0.75rem;
+		border-radius: 4px;
+		display: block;
+		text-decoration: none !important;
+		transition: all 0.15s ease;
+		white-space: nowrap;
+		border: none;
+	}
+
+	.dropdown-menu a:hover {
+		color: var(--text-title) !important;
+		background: rgba(158, 47, 80, 0.08);
+	}
+
+	.chevron {
+		font-size: 0.5rem;
+		transition: transform 0.2s ease;
+		color: var(--text-muted);
+	}
+
+	.nav-item.dropdown:hover .chevron,
+	.nav-item.dropdown.is-open .chevron {
+		transform: rotate(180deg);
+		color: var(--accent);
+	}
+
+	@media (max-width: 1300px) {
+		.kicker {
+			display: none;
+		}
+	}
+
+	@media (max-width: 950px) {
+		.navbar {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 0.75rem;
+			padding: 0.75rem 1rem 0.5rem 1rem;
+		}
+
+		.header-brand-container {
+			justify-content: center;
+		}
+
+		.nav-container {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+		.nav-links {
+			justify-content: center;
+			gap: 0.5rem;
+			width: 100%;
+		}
+
+		:global(.nav-links a), .dropdown-trigger {
+			font-size: 0.85rem;
+			padding: 0.35rem 0.65rem;
+		}
+
+		.dropdown-menu {
+			left: 50%;
+			transform: translateX(-50%) translateY(10px);
+		}
+	}
+</style>
+
+<script>
+	// Toggle dropdowns on touch/click devices for mobile views
+	const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+	
+	dropdowns.forEach(dropdown => {
+		const trigger = dropdown.querySelector('.dropdown-trigger');
+		
+		if (trigger) {
+			trigger.addEventListener('click', (e) => {
+				const isMobile = window.innerWidth <= 950;
+				if (isMobile) {
+					e.preventDefault();
+					e.stopPropagation();
+					
+					// Close other dropdowns
+					dropdowns.forEach(d => {
+						if (d !== dropdown) d.classList.remove('is-open');
+					});
+					
+					const isOpen = dropdown.classList.toggle('is-open');
+					trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+				}
+			});
+		}
+	});
+
+	// Close dropdowns when clicking outside
+	document.addEventListener('click', () => {
+		dropdowns.forEach(d => {
+			d.classList.remove('is-open');
+			const trigger = d.querySelector('.dropdown-trigger');
+			if (trigger) trigger.setAttribute('aria-expanded', 'false');
+		});
+	});
+</script>

@@ -1,0 +1,16 @@
+---
+title: "Benin president visits Niger, Burkina, following coup tensions"
+description: "Niger Benin's new leader on Tuesday visited neighbouring Niger and Burkina Faso, in a sign of easing tensions between his country and the military-led west African states. Niger's"
+pubDate: "2026-06-05T04:24:55Z"
+draft: false
+tags: ["multipolar-world", "africa", "diplomacy", "security", "ai", "sahel"]
+heroImage: "https://pub-f814950afdbb40b7801fc9ec9dc9e04c.r2.dev/hero/smoke-brief-202606051215-benin-president-visits-niger-burkina-following-coup-tensions-qwen.jpg"
+alt: "Photo representing: Benin president visits Niger, Burkina, following coup tensions"
+hero_credit: "Global South News"
+hero_license: "Editorial Use"
+hero_source_url: "https://www.globalsouth.news"
+---
+<p>Cotonou’s new president, Romuald Wadagni, travelled to Niger and Burkina Faso on Tuesday in a swift diplomatic push to mend ties with the military-led Sahelian states, signalling a potential breakthrough after months of border closures and mutual recriminations. Meeting Niger’s junta chief, Abdourahamane Tiani, in Niamey, the two leaders issued a joint statement pledging to “remove all obstacles to strengthening cooperation” and work towards reopening their shared frontier. The border was shut by Niger after its 2023 coup, with Niamey accusing Benin of hosting French bases it claimed were used to destabilise the country—a charge Cotonou has consistently denied.</p>
+<p>The visit, which later took Wadagni to Ouagadougou for talks with Burkina Faso’s leader Ibrahim Traore, underscored a deliberate recalibration of regional diplomacy. Both encounters produced commitments to reinforce joint efforts against terrorism and violent extremism, which have spread from the Sahel into northern Benin. The joint statement with Tiani said they affirmed “their commitment to join forces in fighting the scourge of terrorism and banditry,” while Traore and Wadagni stressed “the urgency of consolidating cooperation against terrorism, cross-border crime and violent extremism.”</p>
+<p>The outreach forms part of what Wadagni’s office described as “active neighbourhood diplomacy” with all bordering states. It follows an earlier gesture: Niger’s Prime Minister Ali Lamine Zeine attended Wadagni’s inauguration in late May, speaking of “a new path” between the neighbours. Analysts noted that the departure of former president Patrice Talon, whom Sahelian juntas had singled out for particular resentment, opened a narrow window for reset. “It felt as though the military leaders of the AES resented Patrice Talon more than they resented Benin itself,” said Cotonou-based political scientist Odilon Koukoubou.</p>
+<p>Economic imperatives also drive the rapprochement. Before the dispute, roughly 80 percent of Niger’s freight passed through the port of Seme-Kpodji in Cotonou, and a major oil pipeline from Niger remains operational despite the tensions. While the sole bridge over the Niger River linking the two countries remains closed under heavy security, Wadagni’s shuttle diplomacy signals that the former ECOWAS members of the Alliance of Sahel States are actively forging new bilateral channels, reshaping alliances across the Global South.</p>

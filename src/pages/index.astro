@@ -1,0 +1,318 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const posts = (await getCollection('blog'))
+	.filter((post) => !post.data.draft)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const categoryLabels = new Map([
+	['multipolar-world', 'Multipolar World'],
+	['brics', 'BRICS'],
+	['development', 'Development'],
+	['trade', 'Trade'],
+	['latin-america', 'Latin America'],
+	['media-map', 'Media Map'],
+	['infrastructure', 'Infrastructure'],
+	['energy', 'Energy'],
+	['africa', 'Africa'],
+	['asia', 'Asia'],
+	['west-asia', 'West Asia'],
+]);
+
+function getCategorySlug(tags = []) {
+	return tags.find((tag) => categoryLabels.has(tag)) || tags[0] || 'multipolar-world';
+}
+
+function getCategoryLabel(slug) {
+	return categoryLabels.get(slug) || slug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+}
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.feed-container {
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.section-header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 2.5rem;
+				border-bottom: 1px solid var(--border-color);
+				padding-bottom: 0.75rem;
+			}
+
+			.section-title {
+				font-size: 0.85rem;
+				font-weight: 800;
+				letter-spacing: 0.15em;
+				text-transform: uppercase;
+				color: var(--text-title);
+				margin: 0;
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+			}
+
+			.section-title::before {
+				content: '';
+				display: inline-block;
+				width: 6px;
+				height: 14px;
+				background: var(--accent);
+				border-radius: 2px;
+			}
+
+			.articles-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 2rem;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			/* Card structure */
+			.article-card {
+				background: var(--bg-card);
+				border: 1px solid var(--border-color);
+				border-radius: 12px;
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+				transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+			}
+
+			.article-card:hover {
+				transform: translateY(-4px);
+				border-color: var(--border-hover);
+				box-shadow: 0 12px 25px rgba(158, 47, 80, 0.06), 0 4px 15px rgba(0, 0, 0, 0.06);
+			}
+
+			.image-container {
+				width: 100%;
+				aspect-ratio: 16/9;
+				overflow: hidden;
+				position: relative;
+				border-bottom: 1px solid var(--border-color);
+				background: var(--bg-card);
+			}
+
+			.article-image {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+			}
+
+			.article-card:hover .article-image {
+				transform: scale(1.04);
+			}
+
+			.card-content {
+				padding: 1.5rem;
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+			}
+
+			.card-meta {
+				display: flex;
+				align-items: center;
+				gap: 0.75rem;
+				margin-bottom: 0.75rem;
+				font-size: 0.75rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+			}
+
+			.category-badge {
+				color: var(--accent);
+				background: rgba(158, 47, 80, 0.08);
+				border: 1px solid rgba(158, 47, 80, 0.15);
+				padding: 0.2rem 0.5rem;
+				border-radius: 4px;
+				text-decoration: none;
+			}
+
+			.category-badge:hover {
+				background: rgba(158, 47, 80, 0.15);
+				color: var(--text-title);
+			}
+
+			.card-date {
+				color: var(--text-muted);
+			}
+
+			.card-title {
+				font-size: 1.35rem;
+				font-weight: 700;
+				line-height: 1.3;
+				margin: 0 0 0.75rem 0;
+				color: var(--text-title);
+				transition: color 0.2s ease;
+			}
+
+			.article-link {
+				text-decoration: none;
+				display: block;
+			}
+
+			.article-link:hover .card-title {
+				color: var(--accent);
+			}
+
+			.card-description {
+				font-size: 0.9rem;
+				color: var(--text-main);
+				line-height: 1.6;
+				margin: 0;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+			}
+
+			/* Featured card (first article) styling */
+			.articles-grid li:first-child {
+				grid-column: span 2;
+			}
+
+			.articles-grid li:first-child .article-card {
+				flex-direction: row;
+				min-height: 380px;
+			}
+
+			.articles-grid li:first-child .image-container {
+				width: 55%;
+				aspect-ratio: auto;
+				border-bottom: none;
+				border-right: 1px solid var(--border-color);
+			}
+
+			.articles-grid li:first-child .card-content {
+				width: 45%;
+				padding: 2.5rem;
+				justify-content: center;
+			}
+
+			.articles-grid li:first-child .card-title {
+				font-size: 1.95rem;
+				margin-bottom: 1rem;
+				font-weight: 800;
+				letter-spacing: -0.02em;
+			}
+
+			.articles-grid li:first-child .card-description {
+				-webkit-line-clamp: 4;
+				font-size: 0.98rem;
+				line-height: 1.65;
+			}
+
+			@media (max-width: 900px) {
+				.articles-grid {
+					grid-template-columns: 1fr;
+					gap: 1.5rem;
+				}
+
+				.articles-grid li:first-child {
+					grid-column: span 1;
+				}
+
+				.articles-grid li:first-child .article-card {
+					flex-direction: column;
+					min-height: auto;
+				}
+
+				.articles-grid li:first-child .image-container {
+					width: 100%;
+					aspect-ratio: 16/9;
+					border-right: none;
+					border-bottom: 1px solid var(--border-color);
+				}
+
+				.articles-grid li:first-child .card-content {
+					width: 100%;
+					padding: 1.5rem;
+				}
+
+				.articles-grid li:first-child .card-title {
+					font-size: 1.45rem;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.card-title {
+					font-size: 1.2rem;
+				}
+				.articles-grid li:first-child .card-title {
+					font-size: 1.3rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="feed-container">
+				<div class="section-header">
+					<h2 class="section-title">Latest Dispatches</h2>
+				</div>
+				<section>
+					<ul class="articles-grid">
+						{
+							posts.map((post) => {
+								const categorySlug = getCategorySlug(post.data.tags);
+								const categoryLabel = getCategoryLabel(categorySlug);
+								return (
+									<li>
+										<div class="article-card">
+											<a href={`/blog/${post.id}/`} class="article-link image-container">
+												{post.data.heroImage && (
+													<img 
+														width="720" 
+														height="360" 
+														src={post.data.heroImage} 
+														alt={post.data.title} 
+														class="article-image" 
+													/>
+												)}
+											</a>
+											<div class="card-content">
+												<div class="card-meta">
+													<a href={`/tags/${categorySlug}/`} class="category-badge">
+														{categoryLabel}
+													</a>
+													<span class="card-date">
+														<FormattedDate date={post.data.pubDate} />
+													</span>
+												</div>
+												<a href={`/blog/${post.id}/`} class="article-link">
+													<h3 class="card-title">{post.data.title}</h3>
+												</a>
+												<p class="card-description">{post.data.description}</p>
+											</div>
+										</div>
+									</li>
+								);
+							})
+						}
+					</ul>
+				</section>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

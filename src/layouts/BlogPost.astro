@@ -1,0 +1,321 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import Interlinks from '../components/Interlinks.astro';
+
+type Props = CollectionEntry<'blog'>['data'] & { body?: string };
+
+const { title, description, pubDate, updatedDate, heroImage, noindex = false, tags = [], body = '', alt, hero_credit, hero_license, hero_source_url } = Astro.props;
+
+// Detect YouTube Video ID for compliance schemas
+let youtubeId: string | null = null;
+if (heroImage) {
+	const match = heroImage.match(/youtube-([a-zA-Z0-9_-]{11})/);
+	if (match) {
+		youtubeId = match[1];
+	}
+}
+if (!youtubeId && body) {
+	const iframeMatch = body.match(/youtube\.com\/embed\/([a-zA-Z0-9_-]{11})/);
+	if (iframeMatch) {
+		youtubeId = iframeMatch[1];
+	} else {
+		const watchMatch = body.match(/v=([a-zA-Z0-9_-]{11})/);
+		if (watchMatch) {
+			youtubeId = watchMatch[1];
+		}
+	}
+}
+
+const videoSchema = youtubeId ? {
+	"@context": "https://schema.org",
+	"@type": "VideoObject",
+	"name": title,
+	"description": description,
+	"thumbnailUrl": heroImage ? [new URL(heroImage, Astro.url).href] : [],
+	"uploadDate": pubDate.toISOString(),
+	"embedUrl": `https://www.youtube.com/embed/${youtubeId}`
+} : null;
+
+const broadcastSchema = youtubeId ? {
+	"@context": "https://schema.org",
+	"@type": "BroadcastEvent",
+	"name": `Live: ${title}`,
+	"isLiveBroadcast": true,
+	"startDate": pubDate.toISOString(),
+	"endDate": new Date(pubDate.getTime() + 2 * 60 * 60 * 1000).toISOString(),
+	"videoFormat": "HD",
+	"video": {
+		"@type": "VideoObject",
+		"name": title,
+		"description": description,
+		"thumbnailUrl": heroImage ? [new URL(heroImage, Astro.url).href] : [],
+		"uploadDate": pubDate.toISOString(),
+		"embedUrl": `https://www.youtube.com/embed/${youtubeId}`
+	}
+} : null;
+
+const categoryLabels = new Map([
+	['multipolar-world', 'Multipolar World'],
+	['brics', 'BRICS'],
+	['development', 'Development'],
+	['trade', 'Trade'],
+	['latin-america', 'Latin America'],
+	['media-map', 'Media Map'],
+	['infrastructure', 'Infrastructure'],
+	['energy', 'Energy'],
+	['africa', 'Africa'],
+	['asia', 'Asia'],
+	['west-asia', 'West Asia'],
+]);
+
+const categoryPriority = [
+	'multipolar-world',
+	'brics',
+	'development',
+	'trade',
+	'latin-america',
+	'media-map',
+	'infrastructure',
+	'energy',
+	'africa',
+	'asia',
+	'west-asia',
+];
+
+function formatTagLabel(slug: string) {
+	return slug
+		.split('-')
+		.filter(Boolean)
+		.map((word) => (word.length <= 2 ? word.toUpperCase() : word.charAt(0).toUpperCase() + word.slice(1)))
+		.join(' ');
+}
+
+const normalizedTitle = title
+	.toLowerCase()
+	.normalize('NFD')
+	.replace(/[\u0300-\u036f]/g, '');
+const categorySlug =
+	categoryPriority.find((slug) => tags.includes(slug)) ||
+	tags.find((tag) => categoryLabels.has(tag)) ||
+	tags[0] ||
+	'multipolar-world';
+const categoryLabel = categoryLabels.get(categorySlug) || formatTagLabel(categorySlug);
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} image={heroImage} noindex={noindex} />
+		<style>
+			main {
+				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 2rem 1.5rem;
+			}
+			.hero-image-container {
+				width: 100%;
+				margin-bottom: 2.5rem;
+			}
+			.hero-image {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				background: transparent;
+				border-radius: 12px;
+				border: 1px solid var(--border-color);
+				overflow: hidden;
+			}
+			.hero-image img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 12px;
+				box-shadow: var(--box-shadow);
+				max-width: 100%;
+				max-height: 65vh;
+				width: auto;
+				height: auto;
+				object-fit: contain;
+			}
+			.hero-credit {
+				display: block;
+				font-size: 0.8rem;
+				color: var(--text-muted);
+				text-align: right;
+				margin-top: 0.5rem;
+				padding-right: 0.5rem;
+			}
+			.hero-credit-link {
+				color: var(--text-muted);
+				text-decoration: underline;
+			}
+			.hero-credit-link:hover {
+				color: var(--accent);
+			}
+			.prose {
+				width: 740px;
+				max-width: 100%;
+				margin: auto;
+				padding: 0 1rem;
+				color: var(--text-main);
+				font-size: 1.08rem;
+				line-height: 1.8;
+			}
+			.title {
+				margin-bottom: 2.5rem;
+				padding-bottom: 1.5rem;
+				border-bottom: 1px solid var(--border-color);
+				text-align: left;
+			}
+			.title h1 {
+				margin: 0.5rem 0 1rem 0;
+				font-size: 2.6rem;
+				font-weight: 800;
+				line-height: 1.2;
+				letter-spacing: -0.025em;
+				color: var(--text-title);
+			}
+			@media (max-width: 768px) {
+				.title h1 {
+					font-size: 1.85rem;
+				}
+				.hero-image {
+					margin-bottom: 1.5rem;
+				}
+				.prose {
+					padding: 0;
+				}
+			}
+			.date {
+				margin-bottom: 0.5em;
+				color: var(--text-muted);
+				font-size: 0.88rem;
+				font-weight: 500;
+			}
+			.category {
+				display: inline-flex;
+				align-items: center;
+				margin-bottom: 0.75rem;
+				padding: 0.25rem 0.6rem;
+				border: 1px solid rgba(158, 47, 80, 0.18);
+				border-radius: 4px;
+				color: var(--accent);
+				background: rgba(158, 47, 80, 0.08);
+				font-size: 0.75rem;
+				font-weight: 700;
+				line-height: 1.2;
+				text-decoration: none;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+			}
+			.category:hover {
+				background: rgba(158, 47, 80, 0.15);
+				color: var(--text-title);
+			}
+			.category-footer {
+				display: flex;
+				align-items: center;
+				gap: 0.6rem;
+				margin-top: 3rem;
+				padding-top: 1.5rem;
+				border-top: 1px solid var(--border-color);
+				font-size: 0.9rem;
+				color: var(--text-muted);
+			}
+			.category-footer-label {
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				font-size: 0.75rem;
+				color: var(--text-muted);
+			}
+			.category-footer-link {
+				margin-bottom: 0;
+			}
+			.last-updated-on {
+				font-style: italic;
+				display: inline-block;
+				margin-left: 0.5rem;
+			}
+		</style>
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "NewsArticle",
+			"headline": title,
+			"image": heroImage ? [new URL(heroImage, Astro.url).href] : [],
+			"datePublished": pubDate.toISOString(),
+			"dateModified": updatedDate ? updatedDate.toISOString() : pubDate.toISOString(),
+			"author": [{
+				"@type": "Organization",
+				"name": "Global South News",
+				"url": "https://www.globalsouth.news"
+			}],
+			"publisher": {
+				"@type": "Organization",
+				"name": "Global South News",
+				"logo": {
+					"@type": "ImageObject",
+					"url": new URL('/favicon.png', Astro.url).href
+				}
+			}
+		})} />
+		{videoSchema && (
+			<script type="application/ld+json" set:html={JSON.stringify(videoSchema)} />
+		)}
+		{broadcastSchema && (
+			<script type="application/ld+json" set:html={JSON.stringify(broadcastSchema)} />
+		)}
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="hero-image-container">
+					<div class="hero-image">
+						{heroImage && <img width="1020" height="510" src={heroImage} alt={alt || ""} />}
+					</div>
+					{(hero_credit || hero_license) && (
+						<span class="hero-credit">
+							Photo: {hero_source_url ? <a href={hero_source_url} target="_blank" rel="noopener noreferrer" class="hero-credit-link">{hero_credit || 'Source'}</a> : (hero_credit || 'Source')}
+							{hero_license ? ` (${hero_license})` : ''}
+						</span>
+					)}
+				</div>
+				<div class="prose">
+					<div class="title">
+						<a class="category" href={`/tags/${categorySlug}/`}>{categoryLabel}</a>
+						<div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<h1>{title}</h1>
+						<hr />
+					</div>
+					<slot />
+					<div class="category-footer">
+						<span class="category-footer-label">Categoria:</span>
+						<a class="category category-footer-link" href={`/tags/${categorySlug}/`}>{categoryLabel}</a>
+					</div>
+					
+					<div class="follow-us-footer" style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+						<span style="font-weight: bold; color: var(--text-muted); font-size: 0.9em; text-transform: uppercase; letter-spacing: 0.5px;">Global South News</span>
+					</div>
+				</div>
+				<div class="prose" style="padding-top: 0;">
+					<Interlinks />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
