@@ -2,6 +2,8 @@
 title: "Africa overtakes Asia as world's hunger epicenter, UN report warns"
 description: "UN report shows Africa now has the most hungry people globally. Conflicts and energy shocks risk pushing millions more into food insecurity."
 pubDate: "2026-07-21"
+heroImage: "/hero/20260721-africa-overtakes-asia-as-world-s-hunger-epicenter-un-report.jpg"
+hero_credit: "Wikimedia Commons (CC BY-SA 4.0) — Kabukasteven"
 source_name: "Africa overtakes Asia as world's hunger hot spot, UN report finds"
 source_url: "http://www.africanews.com/2026/07/21/africa-overtakes-asia-as-worlds-hunger-hot-spot-un-report-finds/"
 tags: ["hunger", "africa", "un report", "food security", "conflict", "energy"]
