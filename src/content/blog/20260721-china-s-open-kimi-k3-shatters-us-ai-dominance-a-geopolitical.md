@@ -3,7 +3,7 @@ title: "China's Open Kimi K3 Shatters US AI Dominance – A Geopolitical Earthqu
 description: "China's Moonshot AI releases Kimi K3, a 2.8 trillion-parameter open model, challenging US sanctions and offering AI sovereignty to the Global South."
 pubDate: "2026-07-21"
 heroImage: "/hero/miguel-kimi_k3.jpg"
-hero_credit: "O Cafezinho / Miguel do Rosário"
+hero_credit: "Imagem editorial gerada por IA (Global South News)"
 source_name: "O Cafezinho"
 source_url: "https://www.ocafezinho.com/2026/07/20/o-impacto-geopolitico-devastador-da-nova-ia-chinesa-kimi-k3/"
 tags: ["ai", "china", "geopolitics", "opensource", "sanctions", "technology"]
