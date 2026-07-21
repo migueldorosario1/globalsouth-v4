@@ -2,8 +2,8 @@
 title: "US prepares new tariff wave as Trump’s temporary duties expire"
 description: "Trade representative hints at levies on 60 partners as existing tariffs lapse; US consumers bear most cost."
 pubDate: "2026-07-21"
-heroImage: "/hero/us-prepares-new-tariff-wave-as-trump-s-temporary-duties-expi.jpg"
-hero_credit: "Wikimedia Commons (Public domain) — John Stuart Mill"
+heroImage: "/hero/20260721-us-prepares-new-tariff-wave-as-trump-s-temporary-duties-expi.jpg"
+hero_credit: "Wikimedia Commons (CC BY-SA 4.0) — Nathan.cima"
 source_name: "US eyes new tariffs as existing trade duties near expiration"
 source_url: "https://www.aljazeera.com/economy/2026/7/21/us-eyes-new-tariffs-as-existing-trade-duties-near-expiration?traffic_source=rss"
 tags: ["tariffs", "united states", "trade war", "trump", "global trade", "protectionism"]

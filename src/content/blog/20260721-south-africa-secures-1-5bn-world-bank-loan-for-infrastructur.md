@@ -2,8 +2,8 @@
 title: "South Africa secures $1.5bn World Bank loan for infrastructure overhaul"
 description: "South Africa signs $1.5bn World Bank loan to fix power, transport and water woes, aiming to create nearly 600,000 jobs."
 pubDate: "2026-07-21"
-heroImage: "/hero/south-africa-secures-1-5bn-world-bank-loan-for-infrastructur.jpg"
-hero_credit: "Wikimedia Commons (Public domain) — John Stuart Mill"
+heroImage: "/hero/20260721-south-africa-secures-1-5bn-world-bank-loan-for-infrastructur.jpg"
+hero_credit: "Wikimedia Commons (CC BY-SA 4.0) — TapticInfo"
 source_name: "South Africa signs $1.5bn World Bank loan for infrastructure development"
 source_url: "http://www.africanews.com/2026/07/21/south-africa-signs-15bn-world-bank-loan-for-infrastructure-development/"
 tags: ["south africa", "world bank", "infrastructure", "loan", "development", "jobs"]
