@@ -2,6 +2,8 @@
 title: "Lesotho's Afriski resort draws winter sports fans to southern Africa"
 description: "Afriski in Lesotho's Maluti Mountains offers skiing and snowboarding, attracting visitors from across southern Africa."
 pubDate: "2026-07-21"
+heroImage: "/hero/20260721-lesotho-s-afriski-resort-draws-winter-sports-fans-to-souther.jpg"
+hero_credit: "Wikimedia Commons (CC BY 2.5) — Jacovt at English Wikipedia"
 hero_credit: "Wikimedia Commons (CC0) — BhuyanBhaskar"
 source_name: "Skiing enthusiasts flock to slopes on Lesotho's Maluti Mountain"
 source_url: "http://www.africanews.com/2026/07/21/skiing-enthusiasts-flock-to-slopes-on-lesothos-maluti-mountain/"

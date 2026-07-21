@@ -2,6 +2,8 @@
 title: "Montreal's Nuits d'Afrique festival marks 40 years of African music"
 description: "The 40th edition of Montreal's Nuits d'Afrique festival celebrated African cultures with artists like Meiway and Admiral T, highlighting the diaspora conne"
 pubDate: "2026-07-21"
+heroImage: "/hero/20260721-montreal-s-nuits-d-afrique-festival-marks-40-years-of-africa.jpg"
+hero_credit: "Wikimedia Commons (Public domain) — Bull-Doser"
 hero_credit: "Wikimedia Commons (CC0) — BhuyanBhaskar"
 source_name: "40th edition of the Nuits d'Afrique music festival comes to a close"
 source_url: "http://www.africanews.com/2026/07/21/40th-edition-of-the-nuits-dafrique-music-festival-comes-to-a-close/"
