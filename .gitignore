@@ -25,6 +25,7 @@ pnpm-debug.log*
 .vercel
 
 # local media assets & logs
-public/hero/
+# V4-FIX 2026-07-21: heroes locais voltam a ser versionados
+# public/hero/
 logs/
 
