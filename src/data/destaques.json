@@ -1,0 +1,42 @@
+[
+  {
+    "kicker": "Miguel do Rosário",
+    "author": "Miguel do Rosário",
+    "title": "The Resurrection of American McCarthyism: A New Red Scare",
+    "url": "/blog/20260721-the-resurrection-of-american-mccarthyism-a-new-red-scare/",
+    "hero": "/hero/miguel-macartismo.jpg",
+    "description": "Washington's crusade against Chinese technology repeats the darkest chapter of American political paranoia — now with semiconductors instead of telegrams."
+  },
+  {
+    "kicker": "Miguel do Rosário",
+    "author": "Miguel do Rosário",
+    "title": "China's Open Kimi K3 Shatters US AI Dominance",
+    "url": "/blog/20260721-china-s-open-kimi-k3-shatters-us-ai-dominance-a-geopolitical/",
+    "hero": "/hero/miguel-kimi_k3.jpg",
+    "description": "An open-weight 2.8T model just broke the Western monopoly on frontier AI — and with it, the geopolitics of technological containment."
+  },
+  {
+    "kicker": "Paulo Nogueira Batista Jr.",
+    "author": "Paulo Nogueira Batista Jr.",
+    "title": "China Does Not Improvise",
+    "url": "/blog/china-does-not-improvise/",
+    "hero": "/hero/china-does-not-improvise.jpg",
+    "description": "Strategic reserves, long-term planning and resilience: how Beijing absorbs Washington's economic containment without missing a beat."
+  },
+  {
+    "kicker": "Paulo Nogueira Batista Jr.",
+    "author": "Paulo Nogueira Batista Jr.",
+    "title": "The Greatest Country in the World",
+    "url": "/blog/the-greatest-country-in-the-world/",
+    "hero": "/hero/the-greatest-country-in-the-world.jpg",
+    "description": "Iran's defense of sovereign nations in West Asia and the strategic costs of a declining empire."
+  },
+  {
+    "kicker": "Paulo Nogueira Batista Jr.",
+    "author": "Paulo Nogueira Batista Jr.",
+    "title": "BRICS and the Path to De-Dollarization",
+    "url": "/blog/20260721-brics-and-the-paths-to-dedollarization/",
+    "hero": "/hero/pnb-dedolarizacao.jpg",
+    "description": "From a common reference currency to payment systems outside SWIFT: the realistic roadmap for BRICS monetary independence."
+  }
+]
