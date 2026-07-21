@@ -3,7 +3,7 @@ title: "Italy’s Meloni orders probe into arrest death after Bologna riots"
 description: "PM calls for investigation into Abderrahim Fakir’s death in police custody; 56 officers injured in clashes."
 pubDate: "2026-07-21"
 heroImage: "/hero/20260721-italy-s-meloni-orders-probe-into-arrest-death-after-bologna.jpg"
-hero_credit: "Wikimedia Commons (Public domain) — Italian Ministry of Telecommunications and Postal Service"
+hero_credit: "Wikimedia Commons (CC BY 2.5) — Kaspo"
 source_name: "Meloni orders full probe after arrest death sparks unrest"
 source_url: "http://www.africanews.com/2026/07/21/meloni-orders-full-probe-after-arrest-death-sparks-unrest/"
 tags: ["italy", "police brutality", "protests", "bologna", "migrants", "investigation"]
