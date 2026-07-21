@@ -2,6 +2,8 @@
 title: "Meloni condemns Bologna protests after Moroccan man dies under police restraint"
 description: "Italian PM pledges probe into death of Abderrahim Fakir as 56 officers injured in clashes. Opposition criticizes police tactics."
 pubDate: "2026-07-21"
+heroImage: "/hero/20260721-meloni-condemns-bologna-protests-after-moroccan-man-dies-und.jpg"
+hero_credit: "Wikimedia Commons (CC BY-SA 3.0) — Original uploader was Madaki at it.wikipedia"
 source_name: "Italy’s Meloni slams protesters following clashes in Bologna"
 source_url: "https://www.aljazeera.com/news/2026/7/21/italys-meloni-slams-protesters-following-clashes-in-bologna?traffic_source=rss"
 tags: ["italy", "bologna", "police brutality", "migration", "protests", "georgia meloni"]
