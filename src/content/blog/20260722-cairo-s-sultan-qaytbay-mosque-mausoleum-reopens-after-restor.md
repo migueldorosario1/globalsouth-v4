@@ -2,8 +2,8 @@
 title: "Cairo's Sultan Qaytbay mosque-mausoleum reopens after restoration"
 description: "The 15th-century Mamluk complex in Cairo reopens following a restoration project funded by a US grant."
 pubDate: "2026-07-22"
-heroImage: "/hero/cairo-s-sultan-qaytbay-mosque-mausoleum-reopens-after-restor.jpg"
-hero_credit: "Wikimedia Commons (CC0) — BhuyanBhaskar"
+heroImage: "/hero/20260722-cairo-s-sultan-qaytbay-mosque-mausoleum-reopens-after-restor.jpg"
+hero_credit: "Wikimedia Commons (CC BY-SA 4.0) — Roland Unger"
 source_name: "Cairo's historic Sultan Qaytbay Mosque-Mausoleum reopens"
 source_url: "http://www.africanews.com/2026/07/21/cairos-historic-sultan-qaytbay-mosque-mausoleum-reopens/"
 tags: ["egypt", "cairo", "sultan qaytbay", "restoration", "mamluk architecture", "cultural heritage"]
