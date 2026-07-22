@@ -2,6 +2,8 @@
 title: "Latin America can lead global shift to fairer economy, UNCTAD chief says"
 description: "UNCTAD's Rebeca Grynspan argues Latin America can drive reform of global economic system toward justice and inclusion."
 pubDate: "2026-07-22"
+heroImage: "/hero/20260722-latin-america-can-lead-global-shift-to-fairer-economy-unctad.jpg"
+hero_credit: "Wikimedia Commons (Public domain) — Gerard van Schagen"
 source_name: "For a more just global economy: The role of Latin America | UN Trade and Development (UNCTAD)"
 source_url: "https://unctad.org/news/more-just-global-economy-role-latin-america"
 tags: ["unctad", "latin america", "global south", "south-south trade", "energy transition", "multilateralism"]
