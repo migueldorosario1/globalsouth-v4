@@ -2,6 +2,8 @@
 title: "UNAIDS chief urges Africa to rethink health funding after aid cuts"
 description: "UNAIDS head calls for 'radical change' in African health financing after major donors slash foreign assistance."
 pubDate: "2026-07-22"
+heroImage: "/hero/20260722-unaids-chief-urges-africa-to-rethink-health-funding-after-ai.jpg"
+hero_credit: "Wikimedia Commons (CC BY 2.0) — Wendy Cope"
 source_name: "UNAIDS Chief urges Africa to rethink health funding after global aid cuts"
 source_url: "http://www.africanews.com/2026/07/21/unaids-chief-urges-africa-to-rethink-health-funding-after-global-aid-cuts/"
 tags: ["unaids", "africa", "health funding", "hiv", "aid cuts", "health sovereignty"]
