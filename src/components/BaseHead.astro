@@ -81,6 +81,15 @@ if (typeof image === 'string') {
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={imageURL} />
 
+<!-- Google Analytics GA4 (instalado via agente V4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E6NLZ31Y21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E6NLZ31Y21');
+</script>
+
 <!-- Google AdSense -->
 <meta name="google-adsense-account" content="ca-pub-8991943608456423" />
 <!-- Google AdSense -->
