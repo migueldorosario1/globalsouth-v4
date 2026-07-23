@@ -2,6 +2,8 @@
 title: "Liberia seizes record $370 million cocaine haul near Monrovia"
 description: "Liberian police seize largest cocaine cache ever, worth $370 million, in Duazon. Two foreigners among suspects arrested."
 pubDate: "2026-07-22"
+heroImage: "/hero/liberia-seizes-record-370-million-cocaine-haul-near-monrovia.jpg"
+hero_credit: "Wikimedia Commons (CC BY 3.0) — blk24ga"
 source_name: "Liberia seizes record cocaine haul near Monrovia, officials say"
 source_url: "http://www.africanews.com/2026/07/22/liberia-seizes-record-cocaine-haul-near-monrovia-officials-say/"
 tags: ["liberia", "cocaine", "drug trafficking", "west africa", "monrovia"]
