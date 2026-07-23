@@ -2,6 +2,8 @@
 title: "Why Global South News exists"
 description: "A launch editorial note on covering development, sovereignty and multipolar politics from outside the old Atlantic frame."
 pubDate: "May 16 2026"
+heroImage: "/hero/why-global-south-news-exists.jpg"
+hero_credit: "Wikimedia Commons (CC BY 4.0) — BlueHypercane761"
 source_name: "Global South News editorial desk"
 source_url: "https://globalsouth.news"
 tags: ["multipolar-world", "brics", "development", "media-map"]
@@ -10,7 +12,6 @@ lang: "en"
 author: "Global South News Desk"
 draft: false
 alt: "Photo representing: Why Global South News exists"
-hero_credit: "Global South News"
 hero_license: "Editorial Use"
 hero_source_url: "https://www.globalsouth.news"
 ---

@@ -2,6 +2,8 @@
 title: "How we cover the Global South"
 description: "The editorial method for source mapping, regional context and practical reporting across the multipolar world."
 pubDate: "May 16 2026"
+heroImage: "/hero/how-we-cover-the-global-south.jpg"
+hero_credit: "Wikimedia Commons (Public domain) — Data: Marc Imhoff/NASA GSFC, Christopher Elvidge/NOAA NGDC; Image: Craig Mayhew"
 source_name: "Global South News editorial desk"
 source_url: "https://globalsouth.news"
 tags: ["media-map", "latin-america", "trade", "development"]
@@ -10,7 +12,6 @@ lang: "en"
 author: "Global South News Desk"
 draft: false
 alt: "Photo representing: How we cover the Global South"
-hero_credit: "Global South News"
 hero_license: "Editorial Use"
 hero_source_url: "https://www.globalsouth.news"
 ---
