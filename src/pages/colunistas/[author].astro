@@ -1,0 +1,146 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE } from '../../consts';
+
+const slugify = (value: string) =>
+	(value || '')
+		.normalize('NFD')
+		.replace(/[̀-ͯ]/g, '')
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/^-+|-+$/g, '');
+
+export async function getStaticPaths() {
+	const allPosts = (await getCollection('blog')).filter((post) => !post.data.draft);
+	const slugify = (value: string) =>
+		(value || '')
+			.normalize('NFD')
+			.replace(/[̀-ͯ]/g, '')
+			.toLowerCase()
+			.replace(/[^a-z0-9]+/g, '-')
+			.replace(/^-+|-+$/g, '');
+	const authors = [...new Set(allPosts.map((post) => post.data.author).filter(Boolean))] as string[];
+
+	return authors.map((author) => ({
+		params: { author: slugify(author) },
+		props: {
+			name: author,
+			posts: allPosts.filter((post) => post.data.author === author),
+		},
+	}));
+}
+
+const { name, posts } = Astro.props;
+const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`${name} - Columnists - ${SITE_TITLE}`} description={`Columns and analysis by ${name} on Global South News.`} />
+		<style>
+			main {
+				width: min(960px, calc(100% - 2rem));
+				margin: 0 auto;
+			}
+
+			.tag-hero {
+				padding: 3rem 0 2rem;
+				border-bottom: 1px solid rgba(var(--gray-light), 0.8);
+				margin-bottom: 2rem;
+			}
+
+			.tag-kicker {
+				margin: 0 0 0.5rem;
+				color: rgb(var(--gray));
+				font-size: 0.85rem;
+				font-weight: 800;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+			}
+
+			.tag-title {
+				margin: 0;
+				font-size: clamp(2.2rem, 6vw, 4rem);
+				line-height: 1;
+			}
+
+			.column-count {
+				margin: 0.75rem 0 0;
+				color: rgb(var(--gray));
+				font-size: 0.95rem;
+			}
+
+			.posts {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 2rem;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			.posts a {
+				display: block;
+				text-decoration: none;
+			}
+
+			.posts img {
+				width: 100%;
+				border-radius: 12px;
+				margin-bottom: 0.75rem;
+			}
+
+			.post-title {
+				margin: 0;
+				color: rgb(var(--black));
+				font-size: 1.35rem;
+				line-height: 1.2;
+			}
+
+			.date,
+			.empty {
+				color: rgb(var(--gray));
+			}
+
+			@media (max-width: 720px) {
+				.posts {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="tag-hero">
+				<p class="tag-kicker">Columnists</p>
+				<h1 class="tag-title">{name}</h1>
+				<p class="column-count">{sortedPosts.length} {sortedPosts.length === 1 ? 'column' : 'columns'}</p>
+			</section>
+
+			{sortedPosts.length ? (
+				<ul class="posts">
+					{sortedPosts.map((post) => (
+						<li>
+							<a href={`/blog/${post.id}/`}>
+								{post.data.heroImage && (
+									<img width="720" height="360" src={post.data.heroImage} alt="" />
+								)}
+								<h2 class="post-title">{post.data.title}</h2>
+								<p class="date"><FormattedDate date={post.data.pubDate} /></p>
+							</a>
+						</li>
+					))}
+				</ul>
+			) : (
+				<p class="empty">New columns by {name} will appear here soon.</p>
+			)}
+		</main>
+		<Footer />
+	</body>
+</html>

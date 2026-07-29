@@ -5,6 +5,7 @@ pubDate: "2026-06-13T16:00:00Z"
 draft: false
 tags: ["asia", "china", "movie"]
 author: "Priscila Miranda"
+categoria_macro: "Priscila Miranda"
 heroImage: "https://pub-f814950afdbb40b7801fc9ec9dc9e04c.r2.dev/hero/smoke-the-chinese-dream-resurrection-bi-gan.jpeg"
 alt: "Photo representing: Resurrection: Bi Gan's Cinematic Dream and China's Soft Power Ascent"
 hero_credit: "Global South News"

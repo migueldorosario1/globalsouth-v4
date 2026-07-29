@@ -5,6 +5,7 @@ pubDate: "2026-06-13T16:05:00Z"
 draft: false
 tags: ["asia", "india", "movie"]
 author: "Priscila Miranda"
+categoria_macro: "Priscila Miranda"
 heroImage: "https://pub-f814950afdbb40b7801fc9ec9dc9e04c.r2.dev/hero/smoke-how-india-transformed-cinema-into-anticolonial-tool.jpg"
 alt: "Photo representing: How India Turned Cinema into an Anti-Colonial Tool Before Independence"
 hero_credit: "Global South News"

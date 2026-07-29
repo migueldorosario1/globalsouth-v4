@@ -5,6 +5,7 @@ pubDate: "2026-06-13T16:55:00Z"
 draft: false
 tags: ["latin-america", "brazil", "movie"]
 author: "Priscila Miranda"
+categoria_macro: "Priscila Miranda"
 heroImage: "https://pub-f814950afdbb40b7801fc9ec9dc9e04c.r2.dev/hero/citizen-netflix-streaming-regulation-brazil.png"
 alt: "Photo representing: Citizen Netflix"
 hero_credit: "Global South News"
