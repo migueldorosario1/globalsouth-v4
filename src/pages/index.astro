@@ -342,7 +342,29 @@ function getCategoryLabel(slug) {
 				.fv-grid li:first-child .fv-card { flex-direction: column; }
 				.fv-grid li:first-child .fv-img { width: 100%; }
 			}
-		</style>
+		
+		/* label mini dos destaques (Miguel 2026-08-05): pequenininho, na cor do
+		   site, como chapeuzinho sobre a foto — sem títulão */
+		.fv-mini {
+			font-size: 0.78rem !important;
+			font-weight: 800;
+			letter-spacing: 0.14em;
+			text-transform: uppercase;
+			color: var(--accent) !important;
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			margin: 0 0 1rem;
+		}
+		.fv-mini::before {
+			content: '';
+			display: inline-block;
+			width: 6px;
+			height: 14px;
+			background: var(--accent);
+			border-radius: 2px;
+		}
+</style>
 	</head>
 	<body>
 		<Header />
@@ -350,7 +372,7 @@ function getCategoryLabel(slug) {
 			<div class="feed-container">
 				<section class="featured-voices">
 					<div class="section-header">
-						<h2 class="section-title">Featured Voices</h2>
+						<h2 class="section-title fv-mini">Featured</h2>
 					</div>
 					<ul class="fv-grid">
 						{
