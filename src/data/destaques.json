@@ -1,42 +1,42 @@
 [
-  {
-    "kicker": "Editor-in-Chief",
-    "author": "Miguel do Rosário",
-    "title": "The Resurrection of American McCarthyism: A New Red Scare",
-    "url": "/blog/20260721-the-resurrection-of-american-mccarthyism-a-new-red-scare/",
-    "hero": "/hero/miguel-macartismo.jpg",
-    "description": "Washington's crusade against Chinese technology repeats the darkest chapter of American political paranoia — now with semiconductors instead of telegrams."
-  },
-  {
-    "kicker": "Editor-in-Chief",
-    "author": "Miguel do Rosário",
-    "title": "China's Open Kimi K3 Shatters US AI Dominance",
-    "url": "/blog/20260721-china-s-open-kimi-k3-shatters-us-ai-dominance-a-geopolitical/",
-    "hero": "/hero/miguel-kimi_k3.jpg",
-    "description": "An open-weight 2.8T model just broke the Western monopoly on frontier AI — and with it, the geopolitics of technological containment."
-  },
-  {
-    "kicker": "Guest Columnist",
-    "author": "Paulo Nogueira Batista Jr.",
-    "title": "China Does Not Improvise",
-    "url": "/blog/china-does-not-improvise/",
-    "hero": "/hero/china-does-not-improvise.jpg",
-    "description": "Strategic reserves, long-term planning and resilience: how Beijing absorbs Washington's economic containment without missing a beat."
-  },
-  {
-    "kicker": "Guest Columnist",
-    "author": "Paulo Nogueira Batista Jr.",
-    "title": "The Greatest Country in the World",
-    "url": "/blog/the-greatest-country-in-the-world/",
-    "hero": "/hero/the-greatest-country-in-the-world.jpg",
-    "description": "Iran's defense of sovereign nations in West Asia and the strategic costs of a declining empire."
-  },
-  {
-    "kicker": "Guest Columnist",
-    "author": "Paulo Nogueira Batista Jr.",
-    "title": "BRICS and the Path to De-Dollarization",
-    "url": "/blog/20260721-brics-and-the-paths-to-dedollarization/",
-    "hero": "/hero/pnb-dedolarizacao.jpg",
-    "description": "From a common reference currency to payment systems outside SWIFT: the realistic roadmap for BRICS monetary independence."
-  }
+    {
+        "kicker": "",
+        "author": "Paulo Nogueira Batista Jr.",
+        "title": "The Greatest Country in the World",
+        "url": "/blog/the-greatest-country-in-the-world/",
+        "hero": "/hero/the-greatest-country-in-the-world.jpg",
+        "description": "An editorial on Iran's geopolitical stance, its defense of sovereign nations in West Asia, and the strategic implications for the declining US empire."
+    },
+    {
+        "kicker": "Priscila Miranda",
+        "author": "Priscila Miranda",
+        "title": "How India Turned Cinema into an Anti-Colonial Tool Before Independence",
+        "url": "/blog/how-india-transformed-cinema-into-anticolonial-tool/",
+        "hero": "https://pub-f814950afdbb40b7801fc9ec9dc9e04c.r2.dev/hero/smoke-how-india-transformed-cinema-into-anticolonial-tool.jpg",
+        "description": "Before independence, India decoded Hollywood's system to build a film industry rooted in local identity, making it an anti-colonial tool and global force."
+    },
+    {
+        "kicker": "",
+        "author": "Miguel do Rosário",
+        "title": "China's Open Kimi K3 Shatters US AI Dominance – A Geopolitical Earthquake",
+        "url": "/blog/20260721-china-s-open-kimi-k3-shatters-us-ai-dominance-a-geopolitical/",
+        "hero": "/hero/miguel-kimi_k3.jpg",
+        "description": "China's Moonshot AI releases Kimi K3, a 2.8 trillion-parameter open model, challenging US sanctions and offering AI sovereignty to the Global South."
+    },
+    {
+        "kicker": "",
+        "author": "Global South News Desk",
+        "title": "FOCAC 2025-2027: China and Africa Unveil Ambitious Action Plan",
+        "url": "/blog/20260721-focac-2025-2027-china-and-africa-unveil-ambitious-action-pla/",
+        "hero": "/hero/focac-2025-2027-china-and-africa-unveil-ambitious-action-pla.jpg",
+        "description": "FOCAC's Beijing Action Plan (2025-2027) details cooperation across politics, economy, agriculture, and more, strengthening South-South ties."
+    },
+    {
+        "kicker": "",
+        "author": "Global South News Desk",
+        "title": "Latin America can lead global shift to fairer economy, UNCTAD chief says",
+        "url": "/blog/20260722-latin-america-can-lead-global-shift-to-fairer-economy-unctad/",
+        "hero": "/hero/20260722-latin-america-can-lead-global-shift-to-fairer-economy-unctad.jpg",
+        "description": "UNCTAD's Rebeca Grynspan argues Latin America can drive reform of global economic system toward justice and inclusion."
+    }
 ]
