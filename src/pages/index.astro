@@ -360,7 +360,7 @@ function getCategoryLabel(slug) {
 										<div class="fv-card">
 											<img class="fv-img" src={d.hero} alt={d.title} loading="lazy" />
 											<div class="fv-content">
-												<span class="fv-kicker">{d.kicker}</span>
+												{d.kicker && <span class="fv-kicker">{d.kicker}</span>}
 												<h3 class="fv-title">{d.title}</h3>
 												<p class="fv-desc">{d.description}</p>
 											</div>
