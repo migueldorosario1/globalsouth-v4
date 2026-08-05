@@ -1,6 +1,6 @@
 [
     {
-        "kicker": "",
+        "kicker": "Multipolar world",
         "author": "Paulo Nogueira Batista Jr.",
         "title": "The Greatest Country in the World",
         "url": "/blog/the-greatest-country-in-the-world/",
@@ -16,15 +16,7 @@
         "description": "Before independence, India decoded Hollywood's system to build a film industry rooted in local identity, making it an anti-colonial tool and global force."
     },
     {
-        "kicker": "",
-        "author": "Miguel do Rosário",
-        "title": "China's Open Kimi K3 Shatters US AI Dominance – A Geopolitical Earthquake",
-        "url": "/blog/20260721-china-s-open-kimi-k3-shatters-us-ai-dominance-a-geopolitical/",
-        "hero": "/hero/miguel-kimi_k3.jpg",
-        "description": "China's Moonshot AI releases Kimi K3, a 2.8 trillion-parameter open model, challenging US sanctions and offering AI sovereignty to the Global South."
-    },
-    {
-        "kicker": "",
+        "kicker": "FOCAC",
         "author": "Global South News Desk",
         "title": "FOCAC 2025-2027: China and Africa Unveil Ambitious Action Plan",
         "url": "/blog/20260721-focac-2025-2027-china-and-africa-unveil-ambitious-action-pla/",
@@ -32,11 +24,19 @@
         "description": "FOCAC's Beijing Action Plan (2025-2027) details cooperation across politics, economy, agriculture, and more, strengthening South-South ties."
     },
     {
-        "kicker": "",
+        "kicker": "Ai",
+        "author": "Miguel do Rosário",
+        "title": "China's Open Kimi K3 Shatters US AI Dominance – A Geopolitical Earthquake",
+        "url": "/blog/20260721-china-s-open-kimi-k3-shatters-us-ai-dominance-a-geopolitical/",
+        "hero": "/hero/miguel-kimi_k3.jpg",
+        "description": "China's Moonshot AI releases Kimi K3, a 2.8 trillion-parameter open model, challenging US sanctions and offering AI sovereignty to the Global South."
+    },
+    {
+        "kicker": "FOCAC",
         "author": "Global South News Desk",
-        "title": "Latin America can lead global shift to fairer economy, UNCTAD chief says",
-        "url": "/blog/20260722-latin-america-can-lead-global-shift-to-fairer-economy-unctad/",
-        "hero": "/hero/20260722-latin-america-can-lead-global-shift-to-fairer-economy-unctad.jpg",
-        "description": "UNCTAD's Rebeca Grynspan argues Latin America can drive reform of global economic system toward justice and inclusion."
+        "title": "FOCAC 2025-2027: China and Africa Unveil Ambitious Action Plan",
+        "url": "/blog/20260721-focac-2025-2027-china-and-africa-unveil-ambitious-action-pla/",
+        "hero": "/hero/focac-2025-2027-china-and-africa-unveil-ambitious-action-pla.jpg",
+        "description": "FOCAC's Beijing Action Plan (2025-2027) details cooperation across politics, economy, agriculture, and more, strengthening South-South ties."
     }
 ]
