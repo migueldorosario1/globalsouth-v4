@@ -2,8 +2,8 @@
 title: "Senegal's President Faye launches own party, deepening rift with ex-PM Sonko"
 description: "President Bassirou Diomaye Faye launches Kiray party, cementing split with former ally Ousmane Sonko ahead of 2029 elections."
 pubDate: "2026-08-05"
-heroImage: "/hero/senegal-s-president-faye-launches-own-party-deepening-rift-w.jpg"
-hero_credit: "Photo by Antonio Prado on Pexels"
+heroImage: "/hero/wm-senegal-s-president-faye-real.jpg"
+hero_credit: "Wikimedia Commons (CC BY 3.0) — Diomaye Faye em entrevista (SENEGO)"
 source_name: "Senegal's President launches his own political party cementing rift with former PM"
 source_url: "http://www.africanews.com/2026/07/26/senegals-president-launches-his-own-political-party-cementing-rift-with-former-pm/"
 tags: ["senegal", "bassirou diomaye faye", "ousmane sonko", "pastef", "kiray", "political rift"]

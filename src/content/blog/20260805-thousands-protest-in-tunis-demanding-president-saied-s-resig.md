@@ -2,8 +2,8 @@
 title: "Thousands protest in Tunis demanding President Saied's resignation"
 description: "Tunisians rally against President Kais Saied, denouncing democratic backsliding and economic crisis on the fifth anniversary of his power grab."
 pubDate: "2026-08-05"
-heroImage: "/hero/thousands-protest-in-tunis-demanding-president-saied-s-resig.jpg"
-hero_credit: "Photo by OrnaW on Pixabay"
+heroImage: "/hero/wm-thousands-protest-in-tun-real.jpg"
+hero_credit: "Wikimedia Commons (CC BY-SA 4.0) — retrato oficial do presidente Kais Saïed"
 source_name: "Thousands rally in Tunisian capital calling for end of president's rule"
 source_url: "http://www.africanews.com/2026/07/26/thousands-rally-in-tunisian-capital-calling-for-end-of-presidents-rule/"
 tags: ["tunisia", "protest", "kais saied", "democracy", "press freedom"]
