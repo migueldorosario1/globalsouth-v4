@@ -16,11 +16,12 @@ export async function getStaticPaths() {
 		'latin-america',
 		'media-map',
 	];
-	const uniqueTags = [...new Set([...allPosts.flatMap((post) => post.data.tags || []), ...fallbackTags])];
+	const _slugTag = (t) => String(t).replace(/[/#?\\]+/g, '-').replace(/^-+|-+$/g, '').trim(); // tag com barra quebrava o build (bug 06/08 GSN 'hiv/aids')
+	const uniqueTags = [...new Set([...allPosts.flatMap((post) => post.data.tags || []), ...fallbackTags].map(_slugTag).filter(Boolean))];
 
 	return uniqueTags.map((tag) => ({
 		params: { tag },
-		props: { posts: allPosts.filter((post) => post.data.tags?.includes(tag)) },
+		props: { posts: allPosts.filter((post) => (post.data.tags || []).map(_slugTag).includes(tag)) },
 	}));
 }
 
