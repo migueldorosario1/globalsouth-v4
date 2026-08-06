@@ -5,10 +5,28 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
-import destaques from '../data/destaques.json';
+import destaquesAll from '../data/destaques.json';
+import destaquesCfg from '../data/destaques_config.json';
 
-const posts = (await getCollection('blog'))
-	.filter((post) => !post.data.draft)
+// Regras de Destaques (ordem Miguel, 2026-08-06):
+// 1) a seção só renderiza se estiver LIGADA no painel (destaques_config.json);
+//    desligada, a home mostra só os mais recentes na frente;
+// 2) destaque com mais de max_age_hours sai do topo (defesa em profundidade —
+//    o gerador ga4_destaques.py já filtra; aqui segura mesmo com JSON velho);
+// 3) destaque exibido no topo NÃO repete na lista de recentes embaixo.
+const _todosPosts = (await getCollection('blog'))
+	.filter((post) => !post.data.draft);
+const _horasMax = Number(destaquesCfg.max_age_hours ?? 48);
+const _maxAgeMs = _horasMax > 0 ? _horasMax * 3600_000 : Infinity;
+const _porUrl = new Map(_todosPosts.map((p) => [`/blog/${p.id}/`, p]));
+const destaques = (destaquesCfg.enabled === true ? destaquesAll : []).filter((d) => {
+	const p = _porUrl.get(d.url);
+	return p && Date.now() - new Date(p.data.pubDate).getTime() <= _maxAgeMs;
+});
+const _urlsDestaque = new Set(destaques.map((d) => d.url));
+
+const posts = _todosPosts
+	.filter((post) => !_urlsDestaque.has(`/blog/${post.id}/`))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const categoryLabels = new Map([
@@ -370,6 +388,7 @@ function getCategoryLabel(slug) {
 		<Header />
 		<main>
 			<div class="feed-container">
+				{destaques.length > 0 && (
 				<section class="featured-voices">
 					<div class="section-header">
 						<h2 class="section-title fv-mini">Featured</h2>
@@ -393,6 +412,7 @@ function getCategoryLabel(slug) {
 						}
 					</ul>
 				</section>
+				)}
 				<div class="section-header">
 					<h2 class="section-title">Latest Dispatches</h2>
 				</div>

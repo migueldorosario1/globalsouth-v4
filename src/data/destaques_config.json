@@ -1,0 +1,7 @@
+{
+  "_doc": "Painel de Destaques (ordem Miguel 2026-08-06). enabled: liga/desliga a seção Destaques do topo (desligado = home mostra só os mais recentes). regra: 'audiencia' (mais vistos no GA4) ou 'recentes'. max_age_hours: destaque por audiência mais velho que isso cai fora (0 = sem limite). top: quantos cards na seção (#1 vira manchete). Edite pelo painel: agentes_tematicos/v4/painel_destaques.py",
+  "enabled": false,
+  "regra": "audiencia",
+  "max_age_hours": 48,
+  "top": 5
+}
