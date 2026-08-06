@@ -1,13 +1,5 @@
 [
     {
-        "kicker": "Multipolar world",
-        "author": "Paulo Nogueira Batista Jr.",
-        "title": "The Greatest Country in the World",
-        "url": "/blog/the-greatest-country-in-the-world/",
-        "hero": "/hero/the-greatest-country-in-the-world.jpg",
-        "description": "An editorial on Iran's geopolitical stance, its defense of sovereign nations in West Asia, and the strategic implications for the declining US empire."
-    },
-    {
         "kicker": "Priscila Miranda",
         "author": "Priscila Miranda",
         "title": "How India Turned Cinema into an Anti-Colonial Tool Before Independence",
@@ -16,12 +8,20 @@
         "description": "Before independence, India decoded Hollywood's system to build a film industry rooted in local identity, making it an anti-colonial tool and global force."
     },
     {
-        "kicker": "FOCAC",
+        "kicker": "Multipolar world",
+        "author": "Paulo Nogueira Batista Jr.",
+        "title": "The Greatest Country in the World",
+        "url": "/blog/the-greatest-country-in-the-world/",
+        "hero": "/hero/the-greatest-country-in-the-world.jpg",
+        "description": "An editorial on Iran's geopolitical stance, its defense of sovereign nations in West Asia, and the strategic implications for the declining US empire."
+    },
+    {
+        "kicker": "Central American Games",
         "author": "Global South News Desk",
-        "title": "FOCAC 2025-2027: China and Africa Unveil Ambitious Action Plan",
-        "url": "/blog/20260721-focac-2025-2027-china-and-africa-unveil-ambitious-action-pla/",
-        "hero": "/hero/focac-2025-2027-china-and-africa-unveil-ambitious-action-pla.jpg",
-        "description": "FOCAC's Beijing Action Plan (2025-2027) details cooperation across politics, economy, agriculture, and more, strengthening South-South ties."
+        "title": "XXV Central American and Caribbean Games Begin in Dominican Republic",
+        "url": "/blog/20260802-xxv-central-american-and-caribbean-games-begin-in-dominican/",
+        "hero": "/hero/xxv-central-american-and-caribbean-games-begin-in-dominican.jpg",
+        "description": "The 100-year-old regional sporting event kicks off with an impressive display of technology and sporting spirit."
     },
     {
         "kicker": "China",
@@ -32,11 +32,11 @@
         "description": "China's Moonshot AI releases Kimi K3, a 2.8 trillion-parameter open model, challenging US sanctions and offering AI sovereignty to the Global South."
     },
     {
-        "kicker": "Unctad",
+        "kicker": "FOCAC",
         "author": "Global South News Desk",
-        "title": "Latin America can lead global shift to fairer economy, UNCTAD chief says",
-        "url": "/blog/20260722-latin-america-can-lead-global-shift-to-fairer-economy-unctad/",
-        "hero": "/hero/20260722-latin-america-can-lead-global-shift-to-fairer-economy-unctad.jpg",
-        "description": "UNCTAD's Rebeca Grynspan argues Latin America can drive reform of global economic system toward justice and inclusion."
+        "title": "FOCAC 2025-2027: China and Africa Unveil Ambitious Action Plan",
+        "url": "/blog/20260721-focac-2025-2027-china-and-africa-unveil-ambitious-action-pla/",
+        "hero": "/hero/focac-2025-2027-china-and-africa-unveil-ambitious-action-pla.jpg",
+        "description": "FOCAC's Beijing Action Plan (2025-2027) details cooperation across politics, economy, agriculture, and more, strengthening South-South ties."
     }
 ]
