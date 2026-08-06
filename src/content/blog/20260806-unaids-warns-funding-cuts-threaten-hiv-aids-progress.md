@@ -6,7 +6,7 @@ heroImage: "/hero/unaids-warns-funding-cuts-threaten-hiv-aids-progress.jpg"
 hero_credit: "Photo by Tara Winstead on Pexels"
 source_name: "UNAIDS warns funding cuts threaten progress to eliminate HIV/AIDS"
 source_url: "http://www.africanews.com/2026/07/28/unaids-warns-funding-cuts-threaten-progress-to-eliminate-hivaids/"
-tags: ["unaids", "hiv/aids", "funding cuts", "global health", "rio de janeiro"]
+tags: ["unaids", "hiv-aids", "funding cuts", "global health", "rio de janeiro"]
 lang: "en"
 author: "Global South News Desk"
 draft: false
