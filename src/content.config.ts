@@ -16,6 +16,7 @@ const blog = defineCollection({
 		lang: z.string().optional(),
 		categoria_macro: z.string().optional(),
 		hero_credit: z.string().optional(),
+		hero_legenda: z.string().optional(),
 		hero_license: z.string().optional(),
 		hero_source_url: z.string().optional(),
 		alt: z.string().optional(),
