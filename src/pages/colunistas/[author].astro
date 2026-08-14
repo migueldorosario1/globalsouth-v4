@@ -1,4 +1,6 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
@@ -36,12 +38,27 @@ export async function getStaticPaths() {
 
 const { name, posts } = Astro.props;
 const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// og:image da página do colunista: retrato dedicado (/autor/<slug>.jpg, se
+// existir no public/) → hero da coluna mais recente → placeholder do BaseHead.
+// Corrige thumbs de compartilhamento que iam com imagem genérica (14/08/2026).
+const authorSlug = slugify(name);
+let ogImage;
+for (const ext of ['jpg', 'jpeg', 'png', 'webp']) {
+	if (fs.existsSync(path.join('public', 'autor', `${authorSlug}.${ext}`))) {
+		ogImage = `/autor/${authorSlug}.${ext}`;
+		break;
+	}
+}
+if (!ogImage && sortedPosts.length && sortedPosts[0].data.heroImage) {
+	ogImage = sortedPosts[0].data.heroImage;
+}
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`${name} - Columnists - ${SITE_TITLE}`} description={`Columns and analysis by ${name} on Global South News.`} />
+		<BaseHead title={`${name} - Columnists - ${SITE_TITLE}`} description={`Columns and analysis by ${name} on Global South News.`} image={ogImage} />
 		<style>
 			main {
 				width: min(960px, calc(100% - 2rem));
