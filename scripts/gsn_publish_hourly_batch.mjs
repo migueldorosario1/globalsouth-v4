@@ -702,6 +702,80 @@ async function expandedConsensus(article, warnings) {
   };
 }
 
+// ===== Trava anti-duplicidade (dedup de título vs. posts existentes) =====
+// Caso-escola 14/08: "US revokes Brazil ambassador's visa..." publicado 2x
+// (BBC + Guardian, títulos ~idênticos, mesmo minuto). Similaridade por tokens
+// normalizados (Jaccard) + bigramas; bloqueia se >= 0.55 contra qualquer post
+// já publicado OU já publicado nesta rodada (mesmo lote).
+const STOPWORDS = new Set(['the', 'a', 'an', 'of', 'in', 'on', 'to', 'and', 'as', 'for', 'amid', 'after', 'over', 'with', 's']);
+
+function titleTokens(raw) {
+  return String(raw || '')
+    .toLowerCase()
+    .replace(/[''’]/g, '')
+    .replace(/[^a-z0-9\s-]/g, ' ')
+    .split(/\s+/)
+    .filter((t) => t && !STOPWORDS.has(t));
+}
+
+function titleSimilarity(a, b) {
+  const ta = titleTokens(a);
+  const tb = titleTokens(b);
+  if (!ta.length || !tb.length) return 0;
+  const sa = new Set(ta);
+  const sb = new Set(tb);
+  let inter = 0;
+  for (const t of sa) if (sb.has(t)) inter += 1;
+  const jaccard = inter / (sa.size + sb.size - inter);
+  const bigramsA = new Set();
+  for (let i = 0; i < ta.length - 1; i++) bigramsA.add(`${ta[i]} ${ta[i + 1]}`);
+  let bigramHits = 0;
+  let bigramTotal = 0;
+  for (let i = 0; i < tb.length - 1; i++) {
+    bigramTotal += 1;
+    if (bigramsA.has(`${tb[i]} ${tb[i + 1]}`)) bigramHits += 1;
+  }
+  const bigramScore = bigramTotal ? (bigramHits / bigramTotal) * 0.6 : 0;
+  return Math.max(jaccard, bigramScore);
+}
+
+function findDuplicateTitle(file, title, publishedThisRound = new Set()) {
+  const threshold = Number(process.env.GSN_DEDUP_THRESHOLD || 0.55);
+  const existing = fs.readdirSync(blogDir).filter((f) => f.endsWith('.md') && f !== file);
+  let best = null;
+  for (const other of existing) {
+    let otherTitle;
+    try {
+      const { frontmatter } = splitFrontmatter(fs.readFileSync(path.join(blogDir, other), 'utf8'));
+      otherTitle = getField(frontmatter, 'title');
+    } catch {
+      continue;
+    }
+    const score = titleSimilarity(title, otherTitle);
+    if (score >= threshold && (!best || score > best.score)) best = { file: other, title: otherTitle, score };
+  }
+  return best;
+}
+
+// Guardião de legenda de hero: detecta keyword-spam de banco de imagens
+// (caso-escola 14/08: "person, people, woman, man, couple, couple, couple...").
+function heroLegendaSpam(frontmatter) {
+  const legenda = getField(frontmatter, 'hero_legenda');
+  if (!legenda) return null;
+  const words = legenda.toLowerCase().split(/[,;]+|\s+/).map((w) => w.trim()).filter(Boolean);
+  if (words.length < 10) return null;
+  const counts = new Map();
+  for (const w of words) counts.set(w, (counts.get(w) || 0) + 1);
+  let repeats = 0;
+  for (const n of counts.values()) if (n > 1) repeats += n - 1;
+  const spamWords = ['person', 'people', 'man', 'woman', 'couple', 'walking', 'side by side', 'back view', 'waist up'];
+  const spamHits = words.filter((w) => spamWords.includes(w)).length;
+  if (repeats >= 3 || (spamHits >= 4 && words.length >= 12)) {
+    return `hero_legenda parece keyword-spam de banco de imagens (${repeats} repetições, ${spamHits} termos genéricos em ${words.length} palavras)`;
+  }
+  return null;
+}
+
 async function auditAndFix(file, publish) {
   const fullPath = path.join(blogDir, file);
   let text = fs.readFileSync(fullPath, 'utf8');
@@ -743,6 +817,21 @@ async function auditAndFix(file, publish) {
   const source = extractSource(nextBody);
   const language = languageCheck({ title, description, body: nextBody });
   if (!language.ok) warnings.push(language.reason);
+  // Trava anti-duplicidade: veto duro na publicação (não é só warning)
+  if (publish) {
+    const dup = findDuplicateTitle(file, title);
+    if (dup) {
+      const reason = `duplicidade editorial: título ${Math.round(dup.score * 100)}% similar a "${dup.title}" (${dup.file})`;
+      fs.appendFileSync(logPath, `${JSON.stringify({ time: new Date().toISOString(), file, published: false, blocked: true, reason })}\n`);
+      throw new Error(`auditoria reteve ${file}: ${reason}`);
+    }
+    const spam = heroLegendaSpam(frontmatter);
+    if (spam) {
+      fs.appendFileSync(logPath, `${JSON.stringify({ time: new Date().toISOString(), file, published: false, blocked: true, reason: spam })}\n`);
+      throw new Error(`auditoria reteve ${file}: ${spam}`);
+    }
+  }
+
   const articleForAudit = {
         title,
         description,
