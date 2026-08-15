@@ -3,8 +3,8 @@ title: "Brazil Slashes Argentina Diplomatic Ties as Milei Escalates Attacks on L
 description: "Brazil reduces diplomatic presence in Argentina after Milei's repeated insults against Lula, recalling ambassador indefinitely."
 pubDate: "2026-08-15"
 heroImage: "/hero/brazil-slashes-argentina-diplomatic-ties-as-milei-escalates.jpg"
-hero_credit: "Lula Oficial (CC BY-SA 4.0) — Banco de Mídia V4"
-hero_legenda: "Lula"
+hero_credit: "Photo by Franco Garcia on Pexels"
+hero_legenda: "Brazil Slashes Argentina Diplomatic Ties as Milei Escalates Attacks on Lula"
 source_name: "Brazil cuts diplomatic presence in Argentina after Milei's attacks on Lula | AP News"
 source_url: "https://apnews.com/article/brazil-argentina-diplomatic-presence-milei-lula-c58683d82b1249ededa2da3145681edd"
 tags: ["brazil", "argentina", "milei", "lula", "diplomacy", "geopolitics"]
