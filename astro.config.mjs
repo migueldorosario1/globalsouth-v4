@@ -7,5 +7,13 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://www.globalsouth.news',
-    integrations: [mdx(), sitemap()],
+    	integrations: [
+		mdx(),
+		sitemap({
+			filter: (page) => {
+				const path = new URL(page).pathname;
+				return !/(^|\/)(tags|teste|preview)(\/|-|$)/.test(path);
+			},
+		}),
+	],
 });
