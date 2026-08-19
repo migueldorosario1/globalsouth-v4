@@ -10,7 +10,7 @@ source_url: "https://www.telesurenglish.net/venezuela-national-dialogue-oppositi
 tags: ["venezuela", "national-dialogue", "opposition", "caracas", "jorge-rodriguez", "earthquake-victims"]
 lang: "en"
 author: "Global South News Desk"
-draft: false
+draft: true
 ---
 Venezuela's government and former opposition deputies of the dissolved 2015-2020 National Assembly began a new round of national dialogue on Thursday in Caracas, according to telesurenglish.net.
 

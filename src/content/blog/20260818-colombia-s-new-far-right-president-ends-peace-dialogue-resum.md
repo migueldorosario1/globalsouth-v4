@@ -10,7 +10,7 @@ source_url: "https://www.telesurenglish.net/de-la-espriella-ends-peace-dialogue/
 tags: ["colombia", "de-la-espriella", "peace-dialogue", "glyphosate", "far-right", "total-peace"]
 lang: "en"
 author: "Global South News Desk"
-draft: false
+draft: true
 ---
 Far-right lawyer Abelardo de la Espriella was sworn in on Friday as Colombia's president for the 2026-2030 period, according to telesurenglish.net. The ceremony took place at the USC Arena of Santiago de Cali University, amid social mobilizations rejecting the new government across the country.
 
