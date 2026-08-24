@@ -1,0 +1,25 @@
+---
+title: "From special operation to strange war: John Helmer analyzes the military escalation and the lack of deterrence of Russia"
+description: "In an interview with Dialogue Works, analyst John Helmer details the tensions in Ukraine, the German and Japanese remilitarization and the behind-the-scenes in Moscow."
+pubDate: "2026-08-18"
+draft: false
+tags: ["Dialogue Works", "From special operation to strange war"]
+heroImage: "/hero/youtube-vVn_DdiBARM.jpg"
+hero_legenda: "From special operation to strange war: John Helmer analyzes the military escalation and th"
+hero_credit: "YouTube / Dialogue Works"
+source_name: "Dialogue Works (YouTube)"
+source_url: "https://www.youtube.com/watch?v=vVn_DdiBARM"
+author: "Global South News Desk"
+lang: "en"
+---
+
+<div style="text-align: center; margin-bottom: 30px;"><iframe width="100%" height="400" src="https://www.youtube.com/embed/vVn_DdiBARM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+
+<p>In an interview with the Dialogue Works channel with host Nima, journalist and military analyst John Helmer discussed the profound transformations in the conflict between Russia and Ukraine. According to Helmer, anonymous Russian military sources mock the official term 'special military operation,' now calling it 'strange military operation' (Strandnaya). According to the analyst, this term denotes confusion and an internal perception that while Russian forces continue to advance slowly in the western territory with a low casualty rate, the Kremlin fails to stop the successive escalations promoted by NATO, which are now reflected in massive drone attacks inside Russian territory.</p>
+<p>John Helmer explained that the Russian strategy of symmetrical responses, or so-called eye for an eye, has proven ineffective in containing Western momentum. The journalist pointed out that the recent use of cluster munitions in Ukrainian drones targeting civilians and commercial infrastructure in Russia exposes Moscow's inability to create a real mechanism of deterrence. For Helmer, the fact that the British press is celebrating the pioneering use of its long-range drones on Russian territory demonstrates that the West has lost its fear of Kremlin threats, viewing Russian diplomatic warnings merely as empty bravado.</p>
+<p>Another crucial point addressed by Helmer refers to the escalation of conflict at sea. He highlighted that the approach of Russian cargo ships by Western naval forces should not be merely labeled as piracy, but rather as an act of open war. In Helmer's assessment, Russian retaliations in the Black Sea, which have already cut Ukrainian wheat exports by about sixty percent, have generated price spikes in Chicago commodities. However, the interviewee emphasized that land and railway routes through Poland continue to operate with insufficient interruptions by Russian forces, reflecting another facet of the tactical strangeness of this war.</p>
+<p>In the Asian geopolitical landscape, the analyst warned about the rapid process of Japan's remilitarization promoted by the United States. Helmer recalled the long history of Russian-Japanese hostilities, from the conflicts of 1904 to World War II, to explain the deep distrust that characterizes current diplomacy led by Foreign Minister Sergey Lavrov. According to Helmer, Washington is encouraging Tokyo to expand its military capabilities, circumventing historical constitutional limitations, with the clear intention of establishing a combat platform against both China and Russia simultaneously.</p>
+<p>In the European scenario, Helmer observed a similar phenomenon of militarization in Germany and France, where dissenting voices and independent journalists are suffering severe financial sanctions to silence criticism of armamentism. He criticized analyses from sectors of the Kremlin that bet on electoral reversals in Europe, such as the rise of Alternative for Germany (AfD) or Marine Le Pen's National Rally, highlighting that these right-wing parties already signal an accommodation to anti-Russian guidelines to facilitate their rise to power. According to the analyst, the Russian belief in easy political changes in the West ignores the solidity of the imperial control exercised by Washington.</p>
+<p>Finally, the journalist commented on behind-the-scenes attempts to establish direct dialogue channels between Donald Trump and Vladimir Putin. Helmer revealed that figures like Jared Kushner and Steve Witkoff have lost credibility in Moscow for being seen as distraction agents incapable of securing lasting agreements. Recently, the name of Rodney Minns Cook emerged as a potential new emissary, but Helmer expressed skepticism about these informal initiatives. According to the interviewee, Russia faces the prospect of a long war against a Europe fully engaged in the conflict, with no clear deadlines for a capitulation in Kiev, which generates intense internal debates about the country's strategic direction.</p>
