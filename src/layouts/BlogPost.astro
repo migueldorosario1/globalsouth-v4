@@ -8,7 +8,7 @@ import Interlinks from '../components/Interlinks.astro';
 
 type Props = CollectionEntry<'blog'>['data'] & { body?: string };
 
-const { title, description, pubDate, updatedDate, heroImage, noindex = false, tags = [], body = '', alt, hero_credit, hero_legenda, hero_license, hero_source_url } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, noindex = false, tags = [], body = '', alt, hero_credit, hero_legenda, hero_license, hero_source_url, author } = Astro.props;
 
 // Detect YouTube Video ID for compliance schemas
 let youtubeId: string | null = null;
@@ -248,7 +248,10 @@ const categoryLabel = categoryLabels.get(categorySlug) || formatTagLabel(categor
 			"image": heroImage ? [new URL(heroImage, Astro.url).href] : [],
 			"datePublished": pubDate.toISOString(),
 			"dateModified": updatedDate ? updatedDate.toISOString() : pubDate.toISOString(),
-			"author": [{
+			"author": author ? [{
+				"@type": "Person",
+				"name": author
+			}] : [{
 				"@type": "Organization",
 				"name": "Global South News",
 				"url": "https://www.globalsouth.news"
