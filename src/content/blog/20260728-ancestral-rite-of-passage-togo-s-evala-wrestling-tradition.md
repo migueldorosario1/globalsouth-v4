@@ -1,5 +1,5 @@
 ---
-title: "Ancestral Rite of Passage: Togo’s Evala Wrestling Tradition"
+title: "Ancestral Rite Of Passage: Togo’s Evala Wrestling Tradition"
 description: "In Togo, young men undergo a traditional wrestling ceremony to mark their transition into adulthood."
 pubDate: "2026-07-28"
 heroImage: "/hero/ancestral-rite-of-passage-togo-s-evala-wrestling-tradition.jpg"

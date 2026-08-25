@@ -4,7 +4,7 @@ description: "Ko Htet Myat Aung sentenced to 37 years by military court for oppo
 pubDate: "2026-08-08"
 heroImage: "/hero/myanmar-student-leader-gets-37-years-for-protesting-junta-el.jpg"
 hero_credit: "Photo by TeGy on Pixabay"
-hero_legenda: "a book, protest, che, ashtray, apo, sds, student protests, sartre, che, che, che, sartre, sartre, sartre, sartre, sartre"
+hero_legenda: "A book, protest, che, ashtray, apo, sds, student protests, sartre, che, che, che, sartre, sartre, sartre, sartre, sartre"
 source_name: "Myanmar Student Leader Sentenced to 37 Years for Protesting Junta Elections"
 source_url: "https://www.telesurenglish.net/myanmar-student-leader-sentenced-to-37-years-for-protesting-junta-elections/"
 tags: ["myanmar", "student leader", "military junta", "political prisoners", "human rights", "elections"]

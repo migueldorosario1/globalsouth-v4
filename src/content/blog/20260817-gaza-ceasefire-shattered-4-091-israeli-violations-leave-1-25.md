@@ -4,7 +4,7 @@ description: "Gaza Media Office reports 4,091 Israeli ceasefire violations in 30
 pubDate: "2026-08-17"
 heroImage: "/hero/gaza-ceasefire-shattered-4-091-israeli-violations-leave-1-25.jpg"
 hero_credit: "Photo by hosnysalah on Pixabay"
-hero_legenda: "children, destruction, childhood, palestine, gaza, strip, people, palestine, palestine, palestine, palestine, palestine, gaza, gaza"
+hero_legenda: "Children, destruction, childhood, Palestine, Gaza, strip, people, Palestine, Palestine, Palestine, Palestine, Palestine, Gaza, Gaza"
 source_name: "Israel Violates Gaza Ceasefire 4,091 Times in 300 Days Leaving Over 1,200 Dead"
 source_url: "https://www.telesurenglish.net/israel-violates-ceasefire-4091-times/"
 tags: ["gaza", "israel", "ceasefire", "humanitarian-crisis", "palestine"]

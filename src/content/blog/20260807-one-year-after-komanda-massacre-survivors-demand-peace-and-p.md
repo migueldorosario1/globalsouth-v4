@@ -4,7 +4,7 @@ description: "DRC residents commemorate victims of ADF attack, call for return o
 pubDate: "2026-08-07"
 heroImage: "/hero/one-year-after-komanda-massacre-survivors-demand-peace-and-p.jpg"
 hero_credit: "Photo by pompi on Pixabay"
-hero_legenda: "rosary, prayer, first communion, beads, a cross, pray, belief, religion, catholic, christianity, mass, rosary, rosary, rosary, rosary, rosary, first communion, catholic"
+hero_legenda: "Rosary, prayer, first communion, beads, a cross, pray, belief, religion, catholic, christianity, mass, rosary, rosary, rosary, rosary, rosary, first communion, catholic"
 source_name: "One year after Komanda massacre, survivors call for peace and protection"
 source_url: "http://www.africanews.com/2026/07/28/one-year-after-komanda-massacre-survivors-call-for-peace-and-protection/"
 tags: ["drc", "komanda", "adf", "massacre", "peace", "ituri"]

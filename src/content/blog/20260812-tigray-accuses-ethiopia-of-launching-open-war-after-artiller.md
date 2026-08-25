@@ -1,10 +1,10 @@
 ---
-title: "Tigray accuses Ethiopia of launching 'open war' after artillery strikes"
+title: "Tigray accuses Ethiopia of launching 'Open war' after artillery strikes"
 description: "Tigray authorities accuse Ethiopia of launching a military offensive, raising fears of renewed conflict."
 pubDate: "2026-08-12"
 heroImage: "/hero/tigray-accuses-ethiopia-of-launching-open-war-after-artiller.jpg"
 hero_credit: "Photo by Lara Jameson on Pexels"
-hero_legenda: "Tigray accuses Ethiopia of launching 'open war' after artillery strikes"
+hero_legenda: "Tigray accuses Ethiopia of launching 'Open war' after artillery strikes"
 source_name: "Authorities in Tigray accuse Addis Ababa of 'launching open war'"
 source_url: "http://www.africanews.com/2026/08/02/authorities-in-tigray-accuse-addis-ababa-of-launching-open-war/"
 tags: ["ethiopia", "tigray", "tplf", "war", "africa"]

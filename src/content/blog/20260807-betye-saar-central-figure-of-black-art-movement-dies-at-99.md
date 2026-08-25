@@ -4,7 +4,7 @@ description: "Betye Saar, pioneering assemblage artist and central figure of the
 pubDate: "2026-08-07"
 heroImage: "/hero/betye-saar-central-figure-of-black-art-movement-dies-at-99.jpg"
 hero_credit: "Photo by GuentherDillingen on Pixabay"
-hero_legenda: "photographer, sunset, mountains, photography, landscape, fog, saar loop, saarschleife, sunrise, nature, man"
+hero_legenda: "Photographer, sunset, mountains, photography, landscape, fog, saar loop, saarschleife, sunrise, nature, man"
 source_name: "Central figure of Black Art Movement Betye Saar dies aged 99"
 source_url: "http://www.africanews.com/2026/07/28/central-figure-of-black-art-movement-betye-saar-dies-aged-99/"
 tags: ["betye saar", "black art movement", "assemblage", "african american art", "obituary"]

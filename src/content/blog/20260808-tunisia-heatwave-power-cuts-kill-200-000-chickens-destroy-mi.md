@@ -1,10 +1,10 @@
 ---
-title: "Tunisia heatwave: power cuts kill 200,000 chickens, destroy milk stock"
+title: "Tunisia Heatwave: Power cuts kill 200,000 chickens, destroy milk stock"
 description: "Rolling blackouts amid extreme heat cause massive losses in Tunisia's poultry, dairy and fishing sectors."
 pubDate: "2026-08-08"
 heroImage: "/hero/tunisia-heatwave-power-cuts-kill-200-000-chickens-destroy-mi.jpg"
 hero_credit: "Photo by Couleur on Pixabay"
-hero_legenda: "chicken, animal, poultry, bird, farm, agriculture, feathers, nature, male, plumage, livestock, farm animals"
+hero_legenda: "Chicken, animal, poultry, bird, farm, agriculture, feathers, nature, male, plumage, livestock, farm animals"
 source_name: "Tunisia: Power cuts amid heatwave leave residents and businesses struggling"
 source_url: "http://www.africanews.com/2026/07/28/tunisia-power-cuts-amid-heatwave-leave-residents-and-businesses-struggling/"
 tags: ["tunisia", "heatwave", "power cuts", "agriculture", "climate change", "economic loss"]

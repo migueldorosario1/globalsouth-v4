@@ -1,11 +1,11 @@
 ---
-title: "Dr. Amir Rezaei: '2026 is not similar at all to what it was during his first administration in 2018 — China and..."
+title: "Dr. Amir Rezaei: '2026 is not similar at all to what it was during his first administration in 2018 — China and...'"
 description: "Dr. Amir Rezaei dissects why Trump’s 2026 ‘crushing’ Iran policy fails: China & Russia won’t comply — the unipolar playbook is obsolete. A Global South inf"
 pubDate: "2026-08-20"
 draft: false
 tags: ["Dialogue Works", "Nima Alkhorshid", "Dr. Amir Rezaei"]
 heroImage: "/hero/youtube-YWxMZqD0lhs.jpg"
-hero_legenda: "Dr. Amir Rezaei: '2026 is not similar at all to what it was during his first administration in 2018 — China and..."
+hero_legenda: "Dr. Amir Rezaei: '2026 is not similar at all to what it was during his first administration in 2018 — China and...'"
 hero_credit: "YouTube / Dialogue Works"
 source_name: "Dialogue Works (YouTube)"
 source_url: "https://www.youtube.com/watch?v=YWxMZqD0lhs"

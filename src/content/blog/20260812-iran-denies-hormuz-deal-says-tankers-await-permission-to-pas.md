@@ -4,7 +4,7 @@ description: "Iran denies Qatari-mediated deal to reopen Strait of Hormuz, says 
 pubDate: "2026-08-12"
 heroImage: "/hero/iran-denies-hormuz-deal-says-tankers-await-permission-to-pas.jpg"
 hero_credit: "Photo by Bergadder on Pixabay"
-hero_legenda: "ship, sea, nature, water, sight, transport, cargo ship, tanker, oil, mountains, gibraltar, coastline, strait"
+hero_legenda: "Ship, sea, nature, water, sight, transport, cargo ship, tanker, oil, mountains, gibraltar, coastline, strait"
 source_name: "Tankers 'waiting for permission' to transit through Strait of Hormuz, Iran says"
 source_url: "http://www.africanews.com/2026/08/02/tankers-waiting-for-permission-to-transit-through-strait-of-hormuz-iran-says/"
 tags: ["iran", "strait of hormuz", "united states", "trump", "geopolitics", "middle east"]

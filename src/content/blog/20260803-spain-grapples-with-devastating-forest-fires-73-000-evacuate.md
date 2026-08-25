@@ -1,5 +1,5 @@
 ---
-title: "Spain Grapples with Devastating Forest Fires: 73,000 Evacuated, 25,000 Hectares Burned"
+title: "Spain Grapples With Devastating Forest Fires: 73,000 Evacuated, 25,000 Hectares Burned"
 description: "Massive forest fires in Madrid and Ávila provinces force evacuation of thousands and engulf vast hectares of forest."
 pubDate: "2026-08-03"
 heroImage: "/hero/spain-grapples-with-devastating-forest-fires-73-000-evacuate.jpg"

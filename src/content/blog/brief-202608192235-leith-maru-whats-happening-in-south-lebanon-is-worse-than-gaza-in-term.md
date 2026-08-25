@@ -1,11 +1,11 @@
 ---
-title: "Leith Maru: 'What's happening in South Lebanon is worse than Gaza — in terms of total destruction and wiping of..."
+title: "Leith Maru: 'What's happening in South Lebanon is worse than Gaza — in terms of total destruction and wiping of...'"
 description: "Leith Maru on Dialogue Works: Israel’s assault on South Lebanon is genocidal erasure — worse than Gaza in scale & historical annihilation. Ali Tahir, Syria"
 pubDate: "2026-08-19"
 draft: false
 tags: ["Dialogue Works", "Nima Alkhorshid", "Leith Maru"]
 heroImage: "/hero/youtube-2BE2rxOpLQI.jpg"
-hero_legenda: "Leith Maru: 'What's happening in South Lebanon is worse than Gaza — in terms of total destruction and wiping of..."
+hero_legenda: "Leith Maru: 'What's happening in South Lebanon is worse than Gaza — in terms of total destruction and wiping of...'"
 hero_credit: "YouTube / Dialogue Works"
 source_name: "Dialogue Works (YouTube)"
 source_url: "https://www.youtube.com/watch?v=2BE2rxOpLQI"

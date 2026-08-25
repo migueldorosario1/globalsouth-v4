@@ -1,11 +1,11 @@
 ---
-title: "Larry Johnson: economic pressure from the USA against Iran can redraw alliances in the Gulf"
+title: "Larry Johnson: Economic pressure from the USA against Iran can redraw alliances in the Gulf"
 description: "Larry Johnson analyzes the pressure from the USA against Iran, risks in the Gulf, China's role, and the weakening of the dollar in an interview with Dialogue Works."
 pubDate: "2026-08-22"
 draft: false
 tags: ["Dialogue Works", "Larry Johnson"]
 heroImage: "/hero/youtube-h2SaRdsG7F0.jpg"
-hero_legenda: "Larry Johnson: economic pressure from the USA against Iran can redraw alliances in the Gul"
+hero_legenda: "Larry Johnson: Economic pressure from the USA against Iran can redraw alliances in the Gul"
 hero_credit: "YouTube / Dialogue Works"
 source_name: "Dialogue Works (YouTube)"
 source_url: "https://www.youtube.com/watch?v=h2SaRdsG7F0"

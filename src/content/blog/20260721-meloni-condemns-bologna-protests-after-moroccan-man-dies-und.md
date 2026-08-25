@@ -1,5 +1,5 @@
 ---
-title: "Abderrahim Fakir death: Italian George Floyd dies in police custody as Meloni attacks protesters"
+title: "Abderrahim Fakir Death: Italian George Floyd dies in police custody as Meloni attacks protesters"
 description: "Moroccan man dies after being restrained by police in Bologna; PM Meloni condemns protests, defends officers; opposition criticizes government."
 pubDate: "2026-07-21"
 heroImage: "/hero/20260721-meloni-condemns-bologna-protests-after-moroccan-man-dies-und.jpg"

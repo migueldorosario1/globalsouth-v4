@@ -5,7 +5,7 @@ pubDate: "2026-08-18"
 draft: false
 tags: ["Daniel Davis / Deep Dive"]
 heroImage: "/hero/youtube-Xsb7c4Htx20.jpg"
-hero_legenda: "United States on inevitable collision course with Iran in Strait of Hormuz, warns Colonel "
+hero_legenda: "United States on inevitable collision course with Iran in Strait of Hormuz, warns Colonel"
 hero_credit: "YouTube / Daniel Davis / Deep Dive"
 source_name: "Daniel Davis / Deep Dive (YouTube)"
 source_url: "https://www.youtube.com/watch?v=Xsb7c4Htx20"

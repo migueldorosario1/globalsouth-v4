@@ -4,7 +4,7 @@ description: "Washington cancels Maria Luiza Ribeiro Viotti's visa in tit-for-ta
 pubDate: "2026-08-18"
 heroImage: "/hero/us-revokes-brazilian-ambassador-s-visa-amid-deepening-spat.jpg"
 hero_credit: "Photo by JoeBamz on Pixabay"
-hero_legenda: "brazil, flag brazil, flags, south america, carioca, flag brazilian, brazilian flag, brazil, brazil, brazil, brazil, brazil, brazilian flag"
+hero_legenda: "Brazil, flag brazil, flags, south america, carioca, flag brazilian, brazilian flag, brazil, brazil, brazil, brazil, brazil, brazilian flag"
 source_name: "US revokes visa of Brazilian ambassador amid deepening diplomatic spat | Donald Trump News | Al Jazeera"
 source_url: "https://www.aljazeera.com/news/2026/8/4/us-revokes-visa-of-brazilian-ambassador-amid-deepening-diplomatic-spat"
 tags: ["brazil", "united-states", "diplomacy", "lula", "trump", "visa"]

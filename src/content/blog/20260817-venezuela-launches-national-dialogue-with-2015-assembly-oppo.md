@@ -4,7 +4,7 @@ description: "Venezuela's government and former opposition deputies opened a new
 pubDate: "2026-08-17"
 heroImage: "/hero/venezuela-launches-national-dialogue-with-2015-assembly-oppo.jpg"
 hero_credit: "Photo by Pexels on Pixabay"
-hero_legenda: "chairs, table, contemporary, furniture, indoors, interior design, office, room, spacious, windows, interior decoration, office furniture, meeting room, boardroom, office, office, office, office, office"
+hero_legenda: "Chairs, table, contemporary, furniture, indoors, interior design, office, room, spacious, windows, interior decoration, office furniture, meeting room, boardroom, office, office, office, office, office"
 source_name: "Venezuelan Government Begins National Dialogue With Opposition Members in Caracas"
 source_url: "https://www.telesurenglish.net/venezuela-national-dialogue-opposition/"
 tags: ["venezuela", "national-dialogue", "opposition", "caracas", "jorge-rodriguez", "earthquake-victims"]

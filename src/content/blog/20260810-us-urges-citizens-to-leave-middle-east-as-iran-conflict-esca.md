@@ -4,7 +4,7 @@ description: "Washington issues urgent evacuation alerts for Americans in the re
 pubDate: "2026-08-10"
 heroImage: "/hero/us-urges-citizens-to-leave-middle-east-as-iran-conflict-esca.jpg"
 hero_credit: "Photo by InsightPhotography on Pixabay"
-hero_legenda: "cockpit, aircraft, runway, flying, aviation, airport, propeller plane, rotor, airplane, transportation, plane, aircraft, runway, runway, aviation, aviation, airport, airport, airport, airport, airport, airplane, airplane"
+hero_legenda: "Cockpit, aircraft, runway, flying, aviation, airport, propeller plane, rotor, airplane, transportation, plane, aircraft, runway, runway, aviation, aviation, airport, airport, airport, airport, airport, airplane, airplane"
 source_name: "Urgent Reasons 2026 US Citizens Evacuate Middle East as Iran Escalates"
 source_url: "https://www.telesurenglish.net/us-citizens-evacuate-middle-east/"
 tags: ["us-evacuation", "iran", "middle-east", "conflict", "geopolitics"]

@@ -4,7 +4,7 @@ description: "Cuba's western region regains electricity after a partial grid fai
 pubDate: "2026-08-13"
 heroImage: "/hero/cuba-restores-power-grid-in-west-after-partial-outage.jpg"
 hero_credit: "Photo by analogicus on Pixabay"
-hero_legenda: "transmission tower, electric tower, electricity pylon, power line, infrastructure, infrastructure, infrastructure, infrastructure, infrastructure, infrastructure"
+hero_legenda: "Transmission tower, electric tower, electricity pylon, power line, infrastructure, infrastructure, infrastructure, infrastructure, infrastructure, infrastructure"
 source_name: "Western Cuba Restores Power Grid After Partial Outage"
 source_url: "https://www.telesurenglish.net/western-cuba-restores-power-grid/"
 tags: ["cuba", "electricity", "blockade", "une", "energy", "global-south"]

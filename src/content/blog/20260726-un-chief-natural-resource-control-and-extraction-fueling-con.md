@@ -1,5 +1,5 @@
 ---
-title: "UN chief: natural resource control and extraction fueling conflict"
+title: "UN Chief: Natural resource control and extraction fueling conflict"
 description: "António Guterres calls for ending exploitation of natural resources in conflict zones, urges fair benefit for local communities."
 pubDate: "2026-07-26"
 heroImage: "/hero/un-chief-natural-resource-control-and-extraction-fueling-con.jpg"

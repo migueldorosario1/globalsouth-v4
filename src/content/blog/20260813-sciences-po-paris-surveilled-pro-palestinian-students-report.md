@@ -4,7 +4,7 @@ description: "Mediapart reveals Sciences Po Paris tracked pro-Palestinian studen
 pubDate: "2026-08-13"
 heroImage: "/hero/sciences-po-paris-surveilled-pro-palestinian-students-report.jpg"
 hero_credit: "Photo by geralt on Pixabay"
-hero_legenda: "write, board, hand, to learn, a notice, training, skills, career, knowledge, can, school, graduation, study, college student, training, training, training, training, training, career, graduation, college student, college"
+hero_legenda: "Write, board, hand, to learn, a notice, training, skills, career, knowledge, can, school, graduation, study, college student, training, training, training, training, training, career, graduation, college student, college"
 source_name: "Sciences Po Paris Monitored Pro-Palestinian Students: Mediapart"
 source_url: "https://www.telesurenglish.net/sciences-po-paris-monitored-pro-palestinian-students-mediapart/"
 tags: ["sciences-po", "palestine", "surveillance", "france", "students", "mediapart"]

@@ -1,11 +1,11 @@
 ---
-title: "Alastair Crooke: 'If the west thinks that Russia will just look the other way, I think they're making a serious..."
+title: "Alastair Crooke: 'If the west thinks that Russia will just look the other way, I think they're making a serious...'"
 description: "Alastair Crooke: West misreads Russia, US strips Ukraine air defenses for Israel, escalation looms as strikes hit civilians; Russia won't look away."
 pubDate: "2026-08-08"
 draft: false
 tags: ["Daniel Davis / Deep Dive", "Daniel Davis", "Alastair Crooke"]
 heroImage: "/hero/youtube--LSXA-kR7dA.jpg"
-hero_legenda: "Alastair Crooke: 'If the west thinks that Russia will just look the other way, I think they're making a serious..."
+hero_legenda: "Alastair Crooke: 'If the west thinks that Russia will just look the other way, I think they're making a serious...'"
 hero_credit: "YouTube / Daniel Davis / Deep Dive"
 source_name: "Daniel Davis / Deep Dive (YouTube)"
 source_url: "https://www.youtube.com/watch?v=-LSXA-kR7dA"

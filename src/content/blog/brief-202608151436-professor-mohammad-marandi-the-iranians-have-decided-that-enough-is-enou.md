@@ -1,11 +1,11 @@
 ---
-title: "Professor Mohammad Marandi: 'the iranians have decided that enough is enough'"
+title: "Professor Mohammad Marandi: 'The Iranians have decided that enough is enough'"
 description: "Iran shifts to 'zero tolerance' against US aggression. Mohammad Marandi analyzes the Hormuz shutdown and Iraq's economic siege."
 pubDate: "2026-08-15"
 draft: false
 tags: ["Dialogue Works", "Nima Alkhorshid", "Mohammad Marandi"]
 heroImage: "/hero/youtube-bi1xf4a5ITI.jpg"
-hero_legenda: "Professor Mohammad Marandi: 'the iranians have decided that enough is enough'"
+hero_legenda: "Professor Mohammad Marandi: 'The Iranians have decided that enough is enough'"
 hero_credit: "YouTube / Dialogue Works"
 source_name: "Dialogue Works (YouTube)"
 source_url: "https://www.youtube.com/watch?v=bi1xf4a5ITI"

@@ -4,7 +4,7 @@ description: "Colombian President Gustavo Petro, in Havana, calls for US-Cuba di
 pubDate: "2026-08-09"
 heroImage: "/hero/petro-urges-us-to-open-dialogue-between-civilizations-with-c.jpg"
 hero_credit: "Photo by Alexas_Fotos on Pixabay"
-hero_legenda: "lovers, silhouette, sunset, together, hand in hand, love, nature, in love, togetherness, as a couple, fun, friendship, valentine's day, connectedness"
+hero_legenda: "Lovers, silhouette, sunset, together, hand in hand, love, nature, in love, togetherness, as a couple, fun, friendship, valentine's day, connectedness"
 source_name: "President Petro Proposes a “Dialogue Between Civilizations” to the US With Cuba"
 source_url: "https://www.telesurenglish.net/president-petro-proposes-a-dialogue-between-civilizations-to-the-us-with-cuba/"
 tags: ["colombia", "cuba", "gustavo-petro", "us-cuba-relations", "dialogue", "solidarity"]

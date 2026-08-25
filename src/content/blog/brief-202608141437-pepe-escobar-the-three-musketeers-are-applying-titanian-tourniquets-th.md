@@ -1,11 +1,11 @@
 ---
-title: "Pepe Escobar: 'The Three Musketeers are applying Titanian tourniquets... that directly affect the unilateral..."
+title: "Pepe Escobar: 'The Three Musketeers are applying Titanian tourniquets... that directly affect the unilateral...'"
 description: "Pepe Escobar dissects the Saudi-Turkey pact and explains how Russia's A7 stablecoin allows the Global South to bypass US sanctions."
 pubDate: "2026-08-14"
 draft: false
 tags: ["Judging Freedom", "Judge Andrew Napolitano", "Pepe Escobar"]
 heroImage: "/hero/youtube-3mC_gt_wJWk.jpg"
-hero_legenda: "Pepe Escobar: 'The Three Musketeers are applying Titanian tourniquets... that directly affect the unilateral..."
+hero_legenda: "Pepe Escobar: 'The Three Musketeers are applying Titanian tourniquets... that directly affect the unilateral...'"
 hero_credit: "YouTube / Judge Napolitano - Judging Freedom"
 source_name: "Judge Napolitano - Judging Freedom (YouTube)"
 source_url: "https://www.youtube.com/watch?v=3mC_gt_wJWk"

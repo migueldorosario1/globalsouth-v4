@@ -4,7 +4,7 @@ description: "Butu nde Makambu uses painting, music and dance to reintegrate imp
 pubDate: "2026-08-08"
 heroImage: "/hero/kinshasa-art-project-steers-street-children-away-from-drugs.jpg"
 hero_credit: "Photo by Nowaja on Pixabay"
-hero_legenda: "forest, trees, sunlight, the path, the road in the forest, track, nature, landscape, walk in the woods, forest road, hiking trail, couple on a walk, walk, couple together, relation, relaxation, oxygenate, rest, fresh air"
+hero_legenda: "Forest, trees, sunlight, the path, the road in the forest, track, nature, landscape, walk in the woods, forest road, hiking trail, couple on a walk, walk, couple together, relation, relaxation, oxygenate, rest, fresh air"
 source_name: "Kinshasa: 'The night has its own realities' group helps impoverished children"
 source_url: "http://www.africanews.com/2026/07/28/kinshasa-the-night-has-its-own-realities-group-helps-impoverished-children/"
 tags: ["kinshasa", "art", "social reintegration", "children", "congo", "community initiative"]

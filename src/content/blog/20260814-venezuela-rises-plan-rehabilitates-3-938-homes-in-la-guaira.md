@@ -4,7 +4,7 @@ description: "La Guaira rehabilitates 3,938 homes under Venezuela Rises plan, 41
 pubDate: "2026-08-14"
 heroImage: "/hero/venezuela-rises-plan-rehabilitates-3-938-homes-in-la-guaira.jpg"
 hero_credit: "Photo by wal_172619 on Pixabay"
-hero_legenda: "house, building, balconies, apartments, facade, residential house, structure, architecture, house, house, house, house, house, building, apartments, apartments, apartments, apartments, architecture"
+hero_legenda: "House, building, balconies, apartments, facade, residential house, structure, architecture, house, house, house, house, house, building, apartments, apartments, apartments, apartments, architecture"
 source_name: "Venezuela Rises Plan Rehabilitates 3,938 Homes in La Guaira After Earthquakes"
 source_url: "https://www.telesurenglish.net/venezuela-rises-rehabilitates-3938-homes/"
 tags: ["venezuela", "la guaira", "reconstruction", "housing", "earthquake recovery"]

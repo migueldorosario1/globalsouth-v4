@@ -4,7 +4,7 @@ description: "Residents of Moroni face severe water shortages, with supply only 
 pubDate: "2026-08-07"
 heroImage: "/hero/comoros-moroni-residents-struggle-as-water-shortages-worsen.jpg"
 hero_credit: "Photo by JonasKIM on Pixabay"
-hero_legenda: "faucet, sink, tap, tap water, flow, flowing water, fresh water, clean water, wet, nature, splashing, splash, water, fountain, water fountain"
+hero_legenda: "Faucet, sink, tap, tap water, flow, flowing water, fresh water, clean water, wet, nature, splashing, splash, water, fountain, water fountain"
 source_name: "The Comoros: Moroni residents struggle amid water shortages"
 source_url: "http://www.africanews.com/2026/07/28/the-comoros-moroni-residents-struggle-amid-water-shortages/"
 tags: ["comoros", "water shortage", "moroni", "infrastructure", "poverty"]

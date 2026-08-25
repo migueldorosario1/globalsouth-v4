@@ -4,7 +4,7 @@ description: "Cuba and Grenada signed two education agreements in Saint George t
 pubDate: "2026-08-14"
 heroImage: "/hero/cuba-and-grenada-sign-education-pacts-for-special-education.jpg"
 hero_credit: "Photo by Maximilianovich on Pixabay"
-hero_legenda: "man, sign, paper, write, document, contract, signing, agreement, signature, signing document, signing contract, signing paper, sign, contract, contract, contract, contract, contract, signing, agreement, signature, signat"
+hero_legenda: "Man, sign, paper, write, document, contract, signing, agreement, signature, signing document, signing contract, signing paper, sign, contract, contract, contract, contract, contract, signing, agreement, signature, signat"
 source_name: "Cuba and Grenada Sign Education Agreements for Special Education and Literacy Program"
 source_url: "https://www.telesurenglish.net/cuba-and-grenada-sign-education-agreements-for-special-education-and-literacy-program/"
 tags: ["cuba", "grenada", "education", "literacy", "south-south cooperation"]

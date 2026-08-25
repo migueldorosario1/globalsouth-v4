@@ -1,11 +1,11 @@
 ---
-title: "Jeffrey sachs: 'this is a genocide that has been underway since 2023'"
+title: "Jeffrey Sachs: 'This is a genocide that has been underway since 2023'"
 description: "Jeffrey Sachs: 'This is a genocide that has been underway since 2023'—on US backing for Israel, Fauci secrecy and NATO expansion."
 pubDate: "2026-08-17"
 draft: false
 tags: ["Judge Napolitano - Judging Freedom", "Andrew Napolitano", "Jeffrey Sachs"]
 heroImage: "/hero/youtube-AtGeEI8vFSY.jpg"
-hero_legenda: "Jeffrey sachs: 'this is a genocide that has been underway since 2023'"
+hero_legenda: "Jeffrey Sachs: 'This is a genocide that has been underway since 2023'"
 hero_credit: "YouTube / Judge Napolitano - Judging Freedom"
 source_name: "Judge Napolitano - Judging Freedom (YouTube)"
 source_url: "https://www.youtube.com/watch?v=AtGeEI8vFSY"

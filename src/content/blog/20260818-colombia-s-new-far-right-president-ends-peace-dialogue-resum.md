@@ -4,7 +4,7 @@ description: "Abelardo de la Espriella sworn in as Colombia's president, vowing 
 pubDate: "2026-08-18"
 heroImage: "/hero/colombia-s-new-far-right-president-ends-peace-dialogue-resum.jpg"
 hero_credit: "Photo by TheDigitalArtist on Pixabay"
-hero_legenda: "trump, president, america, politics, government, donald, presidential, republican, politician, trump, trump, trump, trump, trump"
+hero_legenda: "Trump, president, america, politics, government, donald, presidential, republican, politician, Trump, Trump, Trump, Trump, Trump"
 source_name: "De la Espriella Ends Peace Dialogue in First Speech as Colombian President"
 source_url: "https://www.telesurenglish.net/de-la-espriella-ends-peace-dialogue/"
 tags: ["colombia", "de-la-espriella", "peace-dialogue", "glyphosate", "far-right", "total-peace"]

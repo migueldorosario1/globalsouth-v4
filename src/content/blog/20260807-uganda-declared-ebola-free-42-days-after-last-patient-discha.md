@@ -4,7 +4,7 @@ description: "Uganda is officially Ebola-free after 42 days without new cases. T
 pubDate: "2026-08-07"
 heroImage: "/hero/uganda-declared-ebola-free-42-days-after-last-patient-discha.jpg"
 hero_credit: "Photo by HelenJank on Pixabay"
-hero_legenda: "protective suit, face mask, face shield, medical professional, healthcare professional, profession, paramedic, coronavirus, covid-19, pandemic, covid, hygiene, protection, safety, covid, covid, covid, covid, covid, safet"
+hero_legenda: "Protective suit, face mask, face shield, medical professional, healthcare professional, profession, paramedic, coronavirus, covid-19, pandemic, covid, hygiene, protection, safety, covid, covid, covid, covid, covid, safet"
 source_name: "Uganda officially Ebola-free, 42 days after last patient discharged"
 source_url: "http://www.africanews.com/2026/07/29/uganda-officially-ebola-free-42-days-after-last-patient-discharged/"
 tags: ["uganda", "ebola", "public health", "drc", "outbreak", "who"]

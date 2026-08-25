@@ -4,7 +4,7 @@ description: "Despite a U.S.-backed plan for ceasefire, Israeli strikes in Gaza 
 pubDate: "2026-08-11"
 heroImage: "/hero/israeli-airstrikes-kill-eight-palestinians-as-u-s-backed-cea.jpg"
 hero_credit: "Photo by hosnysalah on Pixabay"
-hero_legenda: "children, kids, strip, hijab, childhood, people, gaza, palestine"
+hero_legenda: "Children, kids, strip, hijab, childhood, people, Gaza, Palestine"
 source_name: "Israeli Strikes Kill Eight as Gaza Peace Plan Stalls"
 source_url: "https://www.telesurenglish.net/israel-kill-eight-gaza-peace-plan-stalls/"
 tags: ["israel", "gaza", "palestine", "ceasefire", "conflict"]

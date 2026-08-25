@@ -1,11 +1,11 @@
 ---
-title: "John mearsheimer: 'it's the united states versus iran plus china plus russia'"
+title: "John Mearsheimer: 'It's the United States versus Iran plus China plus Russia'"
 description: "Mearsheimer explains why US sanctions on Iran will fail in a multipolar world involving China and Russia."
 pubDate: "2026-08-25"
 draft: false
 tags: ["Judging Freedom", "Andrew Napolitano", "John Mearsheimer"]
 heroImage: "/hero/youtube-Q3Te5PIPh3g.jpg"
-hero_legenda: "John mearsheimer: 'it's the united states versus iran plus china plus russia'"
+hero_legenda: "John Mearsheimer: 'It's the United States versus Iran plus China plus Russia'"
 hero_credit: "YouTube / Judging Freedom"
 source_name: "Judging Freedom (YouTube)"
 source_url: "https://www.youtube.com/watch?v=Q3Te5PIPh3g"

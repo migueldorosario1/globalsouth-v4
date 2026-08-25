@@ -1,5 +1,5 @@
 ---
-title: "The Resurrection of American McCarthyism: A New Red Scare"
+title: "The Resurrection Of American McCarthyism: A New Red Scare"
 description: "US State Department report targets leftist groups, reviving Cold War witch hunts to distract from domestic crises."
 pubDate: "2026-07-21"
 heroImage: "/hero/miguel-macartismo.jpg"

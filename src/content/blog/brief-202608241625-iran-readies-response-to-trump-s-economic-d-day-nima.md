@@ -1,11 +1,11 @@
 ---
-title: "Iran readies response to Trump's economic 'D-Day': Nima R. Alkhorshid reports on Mohsen Rezaei"
+title: "Iran readies response to Trump's economic 'd-Day': Nima R. Alkhorshid reports on Mohsen Rezaei"
 description: "No Dialogue Works, Nima R. Alkhorshid reports the statements of Mohsen Rezaei and Iran's strategy in the face of Trump's economic 'D-Day'."
 pubDate: "2026-08-23"
 draft: false
 tags: ["Dialogue Works"]
 heroImage: "/hero/youtube-X3-ohm8fc7s.jpg"
-hero_legenda: "Iran readies response to Trump's economic 'D-Day': Nima R. Alkhorshid reports on Mohsen Re"
+hero_legenda: "Iran readies response to Trump's economic 'd-Day': Nima R. Alkhorshid reports on Mohsen Re"
 hero_credit: "YouTube / Dialogue Works"
 source_name: "Dialogue Works (YouTube)"
 source_url: "https://www.youtube.com/watch?v=X3-ohm8fc7s"

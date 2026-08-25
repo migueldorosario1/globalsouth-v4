@@ -4,7 +4,7 @@ description: "In the midst of ongoing conflict, students in Gaza achieve remarka
 pubDate: "2026-08-11"
 heroImage: "/hero/gaza-students-triumph-amid-israel-s-genocide-with-high-tawji.jpg"
 hero_credit: "Photo by hosnysalah on Pixabay"
-hero_legenda: "school, palestine, gaza, students, education"
+hero_legenda: "School, Palestine, Gaza, students, education"
 source_name: "Gaza students overcome Israel’s genocide to celebrate Tawjihi results"
 source_url: "https://www.aljazeera.com/features/2026/8/2/gaza-students-overcome-israels-genocide-to-celebrate-tawjihi-results?traffic_source=rss"
 tags: ["Gaza", "Education", "Tawjihi", "Resilience", "Palestinian"]

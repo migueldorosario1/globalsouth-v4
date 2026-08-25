@@ -1,11 +1,11 @@
 ---
-title: "John Mearsheimer: 'The idea that you can take a bunch of Americans and send them into a place like Vietnam... and do..."
+title: "John Mearsheimer: 'The idea that you can take a bunch of Americans and send them into a place like Vietnam... and do...'"
 description: "John Mearsheimer explains to Judge Napolitano why the US keeps losing wars due to failed social engineering and diplomatic delusions."
 pubDate: "2026-08-11"
 draft: false
 tags: ["Judging Freedom", "Andrew Napolitano", "John Mearsheimer"]
 heroImage: "/hero/youtube-NAf82r7Tedw.jpg"
-hero_legenda: "John Mearsheimer: 'The idea that you can take a bunch of Americans and send them into a place like Vietnam... and do..."
+hero_legenda: "John Mearsheimer: 'The idea that you can take a bunch of Americans and send them into a place like Vietnam... and do...'"
 hero_credit: "YouTube / Judging Freedom"
 source_name: "Judging Freedom (YouTube)"
 source_url: "https://www.youtube.com/watch?v=NAf82r7Tedw"

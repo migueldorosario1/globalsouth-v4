@@ -1,5 +1,5 @@
 ---
-title: "Liu Xin: 'Our role is a bridge between the authorities and the general public, instead of an antagonist"
+title: "Liu Xin: 'Our role is a bridge between the authorities and the general public, instead of an antagonist'"
 description: "CGTN's Liu Xin explains why Chinese media acts as a bridge, not an antagonist, between government and people, contrasting it with Western media drama."
 pubDate: "2026-05-20T21:37:10Z"
 draft: false

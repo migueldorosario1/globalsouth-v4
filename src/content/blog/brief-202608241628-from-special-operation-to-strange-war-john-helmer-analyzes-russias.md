@@ -1,11 +1,11 @@
 ---
-title: "From Special Operation to Strange War: John Helmer Analyzes Russia’s Military Escalation and Lack of Deterrence"
+title: "From Special Operation To Strange War: John Helmer Analyzes Russia’s Military Escalation and Lack of Deterrence"
 description: "In an interview with Dialogue Works, analyst John Helmer details tensions in Ukraine, German and Japanese remilitarization, and behind-the-scenes developments in Moscow."
 pubDate: "2026-08-18"
 draft: false
 tags: ["Dialogue Works", "From Special Operation to Strange War"]
 heroImage: "/hero/youtube-vVn_DdiBARM.jpg"
-hero_legenda: "From Special Operation to Strange War: John Helmer Analyzes Russia’s Military Escalation a"
+hero_legenda: "From Special Operation To Strange War: John Helmer Analyzes Russia’s Military Escalation a"
 hero_credit: "YouTube / Dialogue Works"
 source_name: "Dialogue Works (YouTube)"
 source_url: "https://www.youtube.com/watch?v=vVn_DdiBARM"

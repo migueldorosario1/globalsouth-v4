@@ -4,7 +4,7 @@ description: "MST hands over antibiotics and supplies to Havana hospital amid U.
 pubDate: "2026-08-17"
 heroImage: "/hero/brazil-s-landless-workers-deliver-7-6-tons-of-medicines-to-c.jpg"
 hero_credit: "Photo by PublicCo on Pixabay"
-hero_legenda: "vintage, flare, travel, cars, buildings, architecture, wander, explore, journey, vintage, vintage, vintage, vintage, vintage, flare, cars, explore, journey, journey"
+hero_legenda: "Vintage, flare, travel, cars, buildings, architecture, wander, explore, journey, vintage, vintage, vintage, vintage, vintage, flare, cars, explore, journey, journey"
 source_name: "Brazilian Landless Workers Donate 7.6 Tons of Medicines to Cuba"
 source_url: "https://www.telesurenglish.net/brazilian-landless-workers-donate-7-6-tons-of-medicines-to-cuba/"
 tags: ["brazil", "cuba", "mst", "solidarity", "us-blockade", "health"]

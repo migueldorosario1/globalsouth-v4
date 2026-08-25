@@ -4,7 +4,7 @@ description: "Mediators Turkey, Egypt, Qatar condemn Israeli strikes in Gaza, ci
 pubDate: "2026-08-13"
 heroImage: "/hero/turkey-egypt-qatar-condemn-israeli-truce-violations-in-gaza.jpg"
 hero_credit: "Photo by hosnysalah on Pixabay"
-hero_legenda: "smoke, people, gaza, strip, palestine, gaza, palestine, palestine, palestine, palestine, palestine"
+hero_legenda: "Smoke, people, Gaza, strip, Palestine, Gaza, Palestine, Palestine, Palestine, Palestine, Palestine"
 source_name: "Turkey, Egypt, and Qatar condemn Israeli violations of Gaza Strip truce"
 source_url: "http://www.africanews.com/2026/08/04/turkey-egypt-and-qatar-condemn-israeli-violations-of-gaza-strip-truce/"
 tags: ["gaza", "israel", "turkey", "egypt", "qatar", "truce"]

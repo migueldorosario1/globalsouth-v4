@@ -4,7 +4,7 @@ description: "Venezuela honors first responders and public servants for outstand
 pubDate: "2026-08-11"
 heroImage: "/hero/venezuela-celebrates-heroes-of-june-24-earthquake-response.jpg"
 hero_credit: "Photo by modovisible on Pixabay"
-hero_legenda: "police, woman, mask, covid, pandemic, security, coronavirus, venezuelan national police, policia nacional bolivariana, face mask, policewoman, police officer, táchira, venezuela, police, police, police, police, police, p"
+hero_legenda: "Police, woman, mask, covid, pandemic, security, coronavirus, venezuelan national police, policia nacional bolivariana, face mask, policewoman, police officer, táchira, venezuela, police, police, police, police, police, p"
 source_name: "Venezuela Honors Responders to June 24 Earthquake Disaster"
 source_url: "https://www.telesurenglish.net/venezuela-honors-responders-earthquake/"
 tags: ["venezuela", "earthquake", "disaster response", "heroism", "solidarity"]

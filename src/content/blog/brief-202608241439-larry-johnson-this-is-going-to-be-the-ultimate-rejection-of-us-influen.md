@@ -1,11 +1,11 @@
 ---
-title: "Larry johnson: 'this is going to be the ultimate rejection of US influence in west asia'"
+title: "Larry Johnson: 'This is going to be the ultimate rejection of US influence in West Asia'"
 description: "China backs Pakistan as new 'Mecca Agreement' forms to reject US influence in West Asia, says Larry Johnson."
 pubDate: "2026-08-24"
 draft: false
 tags: ["Judging Freedom", "Andrew Napolitano", "Larry Johnson"]
 heroImage: "/hero/youtube-qNqRj0RpVWY.jpg"
-hero_legenda: "Larry johnson: 'this is going to be the ultimate rejection of US influence in west asia'"
+hero_legenda: "Larry Johnson: 'This is going to be the ultimate rejection of US influence in West Asia'"
 hero_credit: "YouTube / Judging Freedom"
 source_name: "Judging Freedom (YouTube)"
 source_url: "https://www.youtube.com/watch?v=qNqRj0RpVWY"

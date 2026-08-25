@@ -4,7 +4,7 @@ description: "Cuba's deputy health minister denounces US blockade and fuel restr
 pubDate: "2026-08-16"
 heroImage: "/hero/cuba-us-sanctions-endanger-patient-lives-health-chief-warns.jpg"
 hero_credit: "Photo by vitalworks on Pixabay"
-hero_legenda: "hospital, medical treatment, sign, wall, staff only, hospital, hospital, medical treatment, staff only, staff only, staff only, staff only, staff only"
+hero_legenda: "Hospital, medical treatment, sign, wall, staff only, hospital, hospital, medical treatment, staff only, staff only, staff only, staff only, staff only"
 source_name: "U.S. Sanctions Endanger Patient Lives In Cuba"
 source_url: "https://www.telesurenglish.net/u-s-sanctions-endanger-patient-lives-in-cuba/"
 tags: ["cuba", "us-sanctions", "health", "blockade", "imperialism"]

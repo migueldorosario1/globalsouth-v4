@@ -4,7 +4,7 @@ description: "Cubans cope with unpredictable blackouts as US oil blockade and sa
 pubDate: "2026-08-18"
 heroImage: "/hero/cubans-adapt-to-life-without-power-as-us-oil-blockade-bites.jpg"
 hero_credit: "Photo by Falkenpost on Pixabay"
-hero_legenda: "cars, old car, vehicle, cuba, oltimer, havana, classic, old, automobile, vintage, zapata street, old houses, historical, american car, cars, cuba, cuba, cuba, cuba, cuba, havana"
+hero_legenda: "Cars, old car, vehicle, cuba, oltimer, havana, classic, old, automobile, vintage, zapata street, old houses, historical, american car, cars, cuba, cuba, cuba, cuba, cuba, havana"
 source_name: "Cubans forced to adapt to life without electricity as oil blockade drags on"
 source_url: "http://www.africanews.com/2026/08/07/cubans-forced-to-adapt-to-life-without-electricity-as-oil-blockade-drags-on/"
 tags: ["cuba", "us-blockade", "oil", "blackouts", "imperialism", "resilience"]
