@@ -6,11 +6,11 @@ draft: false
 tags: ["brics", "india", "cinema", "global-south", "cooperation"]
 author: "Priscila Miranda"
 categoria_macro: "Priscila Miranda"
-heroImage: "/hero/the-discreet-charm-of-the-brics.png"
-alt: "Artistic illustration representing BRICS cinema, cultural connections and decorated hands"
-hero_credit: "Global South News / AI Illustration"
+heroImage: "/hero/the-discreet-charm-of-the-brics-photo.jpg"
+alt: "Priscila de Miranda on a panel at the BRICS WAVES event in India"
+hero_legenda: "Priscila de Miranda, author of the article, at a BRICS event in India (BRICS WAVES)"
+hero_credit: "Divulgação"
 hero_license: "Editorial Use"
-hero_source_url: "https://www.globalsouth.news"
 ---
 
 **By Priscila Miranda**
