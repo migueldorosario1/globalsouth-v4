@@ -1,0 +1,22 @@
+---
+title: "Col. Larry Wilkerson: Iran's Bold Missile Tests and the Erosion of US Navy Power"
+description: "Retired Colonel Larry Wilkerson analyzes the escalating tensions between the US and Iran, criticizing Donald Trump's lack of strategy and military policies"
+pubDate: "2026-09-07"
+draft: false
+tags: ["Dialogue Works", "Col. Larry Wilkerson"]
+heroImage: "/hero/youtube-g68WQxzqEfw.jpg"
+hero_legenda: "Col. Larry Wilkerson: Iran's Bold Missile Tests and the Erosion of US Navy Power"
+hero_credit: "YouTube / Dialogue Works"
+source_name: "Dialogue Works (YouTube)"
+source_url: "https://www.youtube.com/watch?v=g68WQxzqEfw"
+author: "Global South News Desk"
+lang: "en"
+---
+
+<div style="text-align: center; margin-bottom: 30px;"><iframe width="100%" height="400" src="https://www.youtube.com/embed/g68WQxzqEfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+
+<div style="text-align: center; margin-bottom: 30px;"><iframe width="100%" height="400" src="https://www.youtube.com/embed/g68WQxzqEfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>In an interview with the channel Dialogue Works, hosted by Nima R. Alkhorshid, retired Colonel Larry Wilkerson analyzed the growing military confrontations between the US and Iran, warning that the escalating tit-for-tat attacks reflect a profound lack of strategic planning by the Trump administration. Wilkerson emhasized that the current maritime skirmishes, including missile strikes affecting carriers and destroyers in the Gulf of Oman, show that regional actors are increasingly willing to challenge the United States Navy and its allies directly.</p><p>According to Larry Wilkerson, the military actions ordered by Donald Trump are not guided by a coherent long-term strategy, but are instead being used as short-term political maneuvers to manage domestic crises and protect his political standing ahead of upcoming elections. Wilkerson argued that the administration's reactive stance is causing irreparable damage to the international standing of the United States, further alienating allies and neutral nations who are now being forced to reconsider their security and economic alignments.</p><p>The interviewee also expressed deep concern over the leadership at the Pentagon, pointing out the perceived incompetence of officials like Pete Hegseth. Wilkerson argued that the current leadership is progressively undermining the capabilities and readiness of the United States military, leading to severe recruitment challenges and administrative mismanagement. He noted that key figures within the military and political establishments remain reluctant to confront these internal failures due to intense political pressure and loyalty to the president.</p><p>The conversation also touched upon the economic vulnerabilities of the global market, particularly regarding shipping lanes in the Strait of Hormuz and the Bab el-Mandeb. Wilkerson pointed out that Iran and the Houthis have demonstrated how easily these key global maritime choke points can be disrupted. This instability, he argued, is already impacting fuel prices and agricultural supply chains, posing a significant threat to the American public's pocketbooks and the broader global economy as insurance and shipping rates climb.</p><p>Wilkerson highlighted how the economic and political decisions of the US administration are accelerating a global shift away from Western dependence. He referenced the growing infrastructure of pipelines and railways across Central and East Asia, involving powers like China and Russia, which strategically bypass Western control. According to the retired colonel, this reflects a broader trend where two-thirds of the world's population and GDP are moving toward alternative economic alliances, rendering US sanctions increasingly counterproductive.</p><p>Finally, the interviewee warned about the volatile actions of Israel under Prime Minister Benjamin Netanyahu. Wilkerson expressed fear that the Israeli leadership might act independently to try and bring down the Iranian regime, an objective he believes is militarily unfeasible without catastrophic measures. He cautioned that a desperate Israeli leadership might resort to extreme measures, including the potential use of nuclear weapons, which would plunge the entire region and the global economy into unprecedented chaos.</p>
