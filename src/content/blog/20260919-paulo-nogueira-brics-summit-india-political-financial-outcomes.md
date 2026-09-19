@@ -16,6 +16,7 @@ draft: false
 ---
 
 *By Paulo Nogueira Batista Jr., economist and former vice-president of the New Development Bank (the BRICS Bank).*
+
 The leaders of the BRICS recently met in New Delhi for their annual summit. Not by chance, the event attracted worldwide attention. The BRICS constitute one of the main international platforms, already surpassing in importance and effectiveness two older groups of the same type – the G7 and the G20.
 
 The weight of the BRICS stems from the size of its members. It includes the two most populous countries on the planet (India and China); three of the five largest countries in territorial extension (Russia, China and Brazil); and five of the ten largest economies in the world (China, India, Russia, Indonesia and Brazil). Moreover, the group includes the three countries that are being targeted by the collective West – China, Russia and Iran. The activities of the BRICS are thus followed with considerable concern in Washington and European capitals. Donald Trump has threatened the BRICS several times, trying to scare the most fearful or most vulnerable members of the group.
