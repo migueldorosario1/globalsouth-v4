@@ -1,5 +1,6 @@
 ---
 import { SITE_TITLE } from '../consts';
+import BannerMoka from './BannerMoka.astro';
 import logoImg from '../assets/logo.png';
 
 const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
@@ -17,6 +18,7 @@ const isGeonewsActive = cleanPath.startsWith('tags/asia') ||
 ---
 
 <header class="site-header">
+	<BannerMoka />
 	<nav class="navbar" aria-label="Main navigation">
 		<div class="header-brand-container">
 			<a href="/" class="logo-link" aria-label={SITE_TITLE}>
