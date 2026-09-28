@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import Interlinks from '../components/Interlinks.astro';
+import BannerMoka from '../components/BannerMoka.astro';
 
 type Props = CollectionEntry<'blog'>['data'] & { body?: string };
 
@@ -104,7 +105,6 @@ const categorySlug =
 	tags[0] ||
 	'multipolar-world';
 const categoryLabel = categoryLabels.get(categorySlug) || formatTagLabel(categorySlug);
-import BannerMoka from '../components/BannerMoka.astro';
 ---
 
 <html lang="en">
