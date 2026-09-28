@@ -104,6 +104,7 @@ const categorySlug =
 	tags[0] ||
 	'multipolar-world';
 const categoryLabel = categoryLabels.get(categorySlug) || formatTagLabel(categorySlug);
+import BannerMoka from '../components/BannerMoka.astro';
 ---
 
 <html lang="en">
@@ -305,6 +306,8 @@ const categoryLabel = categoryLabels.get(categorySlug) || formatTagLabel(categor
 						<hr />
 					</div>
 					<slot />
+
+<BannerMoka />
 					<div class="category-footer">
 						<span class="category-footer-label">Categoria:</span>
 						<a class="category category-footer-link" href={`/tags/${categorySlug}/`}>{categoryLabel}</a>
